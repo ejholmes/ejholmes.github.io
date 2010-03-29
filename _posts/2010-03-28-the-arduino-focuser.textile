@@ -20,6 +20,7 @@ h2. The Software
 The <a href="http://github.com/ejholmes/Arduino-Focuser--ASCOM-Driver-">ASCOM driver</a> (written in C#) talks to the <a href="http://github.com/ejholmes/Arduino-Focuser--Embedded-">embedded software</a> via the virtual serial port created by the Arduino driver. The ascom driver issues commands such as ": M 1000 #", while the board parses those commands and acts accordingly. Parsing was not such an easy task but thanks to the <a href="http://www.arduino.cc/playground/Code/Messenger">Messenger library</a> (slightly modified) it was made much simpler. Still, it brings back nostalgic memories of RESTful API's.
 
 h2. The Final Product
+
 It supports absolute positioning of the focuser up to around 13,000 points (on my focuser) of focus.
 <object width="410" height="252"><param name="movie" value="http://www.youtube.com/v/buo05pGONkw&hl=en_US&fs=1&">
 </param>
