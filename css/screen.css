@@ -5,10 +5,19 @@ body {
 	line-height: 1.5em;
 	color: #222;
 	font-size: 0.9em;
+	min-width: 1024px;
 }
 
 a {
 	text-decoration: none;
+}
+
+img {
+	border: none;
+}
+
+a {
+	border: none;
 }
 
 h1,h2,h3,h4{
@@ -56,6 +65,28 @@ div#content code {
 	background: #F8F8FF;
 	border: 1px solid #DEDEDE;
 	color: #444;
+}
+
+div#flickr {
+	float: left;
+	width: 160px;
+	margin-left: -180px;
+	margin-top: 3em;
+}
+
+div#flickr h2 {
+	margin: 0 0 0.5em 0.1em;
+	color: #ccc;
+	line-height: 1em;
+}
+
+div#flickr ul, div#flickr li {
+	list-style: none;
+	margin-left: 5px;
+}
+
+div#flickr li {
+	float: left;
 }
 
 div#footer {
