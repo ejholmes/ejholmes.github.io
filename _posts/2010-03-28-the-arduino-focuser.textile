@@ -1,0 +1,30 @@
+---
+layout: post
+title: The Arduino Focuser
+---
+
+h1. {{ page.title }}
+
+In case you've never heard of it, the "Arduino is a tool for the design and development of embedded computer systems, consisting of a simple open hardware design for a single-board microcontroller, with embedded I/O support and a standard programming language." In other words, it kicks ass.
+
+This is where I decided to start my homemade <a href="http://ascom-standards.org/">ASCOM</a> compliant computerized focuser. My goal was to use the Arduino to control a single stepper motor that in turn would be controlled by auto focusing software such as MaximDL or FocusMax using an ASCOM driver.
+
+h2. The Hardware
+
+The stepper motor I'm using is an old stepper I had from a single axis drive system for and EQ3 mount. I haven't looked into it but I think it has a fairly high resolution at around 0.5 degrees per step.
+
+In order to control the stepper motor, I came across a <a href="http://www.ladyada.net/make/mshield/">motor shield</a> by Adafruit Industries. It also included a <a href="http://www.ladyada.net/make/mshield/use.html">library</a> for microstepping, which made it ideal for high precision focus control. The stepper motor is connected to the Arduino board via the motor shield through an RS232 cable.
+
+h2. The Software
+
+The <a href="http://github.com/ejholmes/Arduino-Focuser--ASCOM-Driver-">ASCOM driver</a> (written in C#) talks to the <a href="http://github.com/ejholmes/Arduino-Focuser--Embedded-">embedded software</a> via the virtual serial port created by the Arduino driver. The ascom driver issues commands such as ": M 1000 #", while the board parses those commands and acts accordingly. Parsing was not such an easy task but thanks to the <a href="http://www.arduino.cc/playground/Code/Messenger">Messenger library</a> (slightly modified) it was made much simpler. Still, it brings back nostalgic memories of RESTful API's.
+
+h2. The Final Product
+It supports absolute positioning of the focuser up to around 13,000 points (on my focuser) of focus.
+<object width="410" height="252"><param name="movie" value="http://www.youtube.com/v/buo05pGONkw&hl=en_US&fs=1&">
+</param>
+<param name="allowFullScreen" value="true">
+</param>
+<param name="allowscriptaccess" value="always">
+</param>
+<embed src="http://www.youtube.com/v/buo05pGONkw&hl=en_US&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="410" height="252"></embed></object>
