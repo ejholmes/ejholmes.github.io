@@ -8,16 +8,26 @@
    <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
 </head>
 <body>
-
-<div class="site">
-  <div class="title">
-    <a href="/">Holmes Observatory</a>
-  </div>
-  
-  {{ content }}
-  
-  <div class="footer">
-  </div>
-</div>
+	<div id="container">
+		<div class="title">
+			<a href="/">Holmes Observatory</a>
+		</div>
+	  
+			{{ content }}
+	  
+		<div id="footer">
+			<div class="section archive">
+				<h1>Archive</h1>
+				<ul id="posts">
+					{% for post in site.posts %}
+						<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+					{% endfor %}
+				</ul>
+			</div>
+			<div class="section copyright">
+				&copy; 2010 Eric Holmes.
+			</div>
+		</div>
+	</div>
 </body>
 </html>
