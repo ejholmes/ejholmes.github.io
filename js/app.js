@@ -2,8 +2,10 @@ $(document).ready(function(){
 	$('#flickr').jflickrfeed({
 		limit: 14,
 		qstrings: {
-			id: '47865405@N02'
+			nsid: '47865405@N02',
+			set: '72157623732861328'
 		},
+		feedapi: 'photoset.gne',
 		itemTemplate: 
 		'<li>' +
 			'<a href="{{image_b}}" class="photos"><img src="{{image_s}}" alt="{{title}}" /></a>' +
