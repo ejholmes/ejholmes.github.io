@@ -3,8 +3,8 @@ layout: default
 ---
 <div id="content">
 	<article>
-		<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-		<time>{{ first_post.date | date_to_string }}</time>
+		<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+		<time>{{ page.date | date_to_string }}</time>
 		{{ content }}
 	</article>
 </div>
