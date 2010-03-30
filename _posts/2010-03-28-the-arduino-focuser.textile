@@ -9,9 +9,9 @@ This is where I decided to start my homemade <a href="http://ascom-standards.org
 
 h2. The Hardware
 
-<a href="http://www.flickr.com/photos/47865405@N02/4475190025/sizes/l/"><img class="left" src="http://farm5.static.flickr.com/4039/4475190025_7d18811497_m.jpg" alt="Outside electronic box" /></a>The stepper motor I'm using is an old stepper I had from a single axis drive system for and EQ3 mount. I haven't looked into it but I think it has a fairly high resolution at around 0.5 degrees per step.
+<a href="http://farm5.static.flickr.com/4039/4475190025_7d18811497_b.jpg"><img class="left" src="http://farm5.static.flickr.com/4039/4475190025_7d18811497_m.jpg" alt="Outside electronic box" /></a>The stepper motor I'm using is an old stepper I had from a single axis drive system for and EQ3 mount. I haven't looked into it but I think it has a fairly high resolution at around 0.5 degrees per step.
 
-In order to control the stepper motor, I came across a <a href="http://www.ladyada.net/make/mshield/">motor shield</a> by Adafruit Industries. It also included a <a href="http://www.ladyada.net/make/mshield/use.html">library</a> for microstepping, which made it ideal for high precision focus control. The stepper motor is connected to the Arduino board via the motor shield through an RS232 cable. <a href="http://www.flickr.com/photos/47865405@N02/4475192419/sizes/l/"><img class="right" src="http://farm5.static.flickr.com/4047/4475192419_956467c83c_m.jpg" alt="Outside electronic box" /></a>
+In order to control the stepper motor, I came across a <a href="http://www.ladyada.net/make/mshield/">motor shield</a> by Adafruit Industries. It also included a <a href="http://www.ladyada.net/make/mshield/use.html">library</a> for microstepping, which made it ideal for high precision focus control. The stepper motor is connected to the Arduino board via the motor shield through an RS232 cable. <a href="http://farm5.static.flickr.com/4047/4475192419_956467c83c_b.jpg"><img class="right" src="http://farm5.static.flickr.com/4047/4475192419_956467c83c_m.jpg" alt="Outside electronic box" /></a>
 
 h2. The Software
 

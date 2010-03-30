@@ -19,4 +19,5 @@ $(document).ready(function(){
 
 function bind(){
 	$("#flickr a").fancybox();
+	$("#content a[href*='flickr.com']").fancybox();
 }
