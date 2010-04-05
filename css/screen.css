@@ -107,6 +107,7 @@ div#flickr li {
 
 div#footer {
 	margin-top: 2em;
+	clear: both;
 }
 
 div#footer div.section {
