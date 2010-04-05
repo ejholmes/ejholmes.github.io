@@ -53,6 +53,10 @@ div#header li {
 	margin-right: 1em;
 }
 
+div#content {
+	min-height: 600px;
+}
+
 div#content object {
 	display: block;
 }
