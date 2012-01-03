@@ -93,6 +93,13 @@ div#content img.right {
 div#content code {
     background: #000;
     color: #fff;
+    padding: 0 7px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+div#content pre code {
     display: block;
     line-height: 1.5em;
     padding: 1.5em;

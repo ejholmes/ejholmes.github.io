@@ -3,6 +3,8 @@ layout: post
 title: The Arduino Focuser
 ---
 
+<strong>UPDATE:</strong> The Ardunio Focuser was just featured in the October issue of Astronomy Now magazine in the UK. Read about it on page 76-77!
+
 <a href="http://arduino.cc"><img class="right" src="http://arduino.cc/en/uploads/Main/arduino316.jpg" alt="Arduino" /></a>In case you've never heard of it, the "Arduino is a tool for the design and development of embedded computer systems, consisting of a simple open hardware design for a single-board microcontroller, with embedded I/O support and a standard programming language." In other words, it kicks ass.
 
 This is where I decided to start my homemade <a href="http://ascom-standards.org/">ASCOM</a> compliant computerized focuser. My goal was to use the Arduino to control a single stepper motor that in turn would be controlled by auto focusing software such as MaximDL or FocusMax using an ASCOM driver.
