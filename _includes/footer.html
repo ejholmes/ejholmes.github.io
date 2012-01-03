@@ -1,1 +1,11 @@
-<div id="footer">	<div class="section archive">		<h1>Archive</h1>		<ul id="posts">			{% for post in site.posts %}				<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>			{% endfor %}		</ul>	</div>	<div class="section copyright">		&copy; 2010 Eric Holmes.	</div></div>
+<div id="footer">
+    <div class="section archive">
+        <h2>Archive</h2>
+        <ul id="posts">
+            {% for post in site.posts %}
+            <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="section copyright">&copy; 2010 Eric Holmes.</div>
+</div>
