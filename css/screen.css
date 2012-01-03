@@ -65,7 +65,7 @@ div#header li {
 }
 
 div#content {
-	min-height: 600px;
+	min-height: 300px;
     font-family: Georgia, serif;
     font-size: 1.3em;
     line-height: 1.6em;
@@ -79,6 +79,13 @@ div#content object {
 div#content div.flash object, div#content img {
 	border: 1px solid #dedede;
 	background: #F8F8FF;
+}
+
+div#content img {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 div#content img.left {
@@ -112,6 +119,7 @@ div#content pre code {
 div#footer {
 	margin-top: 2em;
 	clear: both;
+    color: #535353;
 }
 
 div#footer div.section {

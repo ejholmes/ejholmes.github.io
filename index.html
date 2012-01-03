@@ -3,13 +3,11 @@ layout: default
 ---
 
 <div id="home">
-	<div id="content">
-		<article>
-			{% assign first_post = site.posts.first %}
-			<h1><a href="{{ first_post.url }}">{{ first_post.title }}</a></h1>
-			<time>{{ first_post.date | date_to_string }}</time>
-			{{ first_post.content }}
-		</article>
-	</div>
+    <article>
+        {% assign first_post = site.posts.first %}
+        <h1><a href="{{ first_post.url }}">{{ first_post.title }}</a></h1>
+        <time>{{ first_post.date | date_to_string }}</time>
+        {{ first_post.content }}
+    </article>
 </div>
   
