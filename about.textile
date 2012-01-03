@@ -7,4 +7,4 @@ h1. About Me
 
 Hi, my name is Eric.
 
-I'm an amateur astronomer, programmer and web developer.
+I'm an amateur astronomer, programmer and professional web developer.

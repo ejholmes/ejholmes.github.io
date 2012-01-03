@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:700);
+ 
 body {
 	font-size: 1em;
 	font-family: Helvetica, Arial, Sans;
@@ -21,8 +23,10 @@ a {
 	border: none;
 }
 
-h1,h2,h3,h4{
-  font-family: Sans-serif;
+h1,
+h2,
+h3,
+h4 {
   font-weight: normal;
   line-height: 1em;
 }
@@ -32,6 +36,10 @@ article time {
 	margin-top: -1em;
 	display: block;
 	font-size: 0.8em;
+}
+
+article > h1 {
+    font-family: 'PT Sans', Arial, sans-serif;
 }
 
 div#container {
@@ -55,6 +63,9 @@ div#header li {
 
 div#content {
 	min-height: 600px;
+    font-family: Georgia, serif;
+    font-size: 1.3em;
+    line-height: 1.6em;
 }
 
 div#content object {
@@ -64,10 +75,6 @@ div#content object {
 div#content div.flash object, div#content img {
 	border: 1px solid #dedede;
 	background: #F8F8FF;
-}
-
-div#content img {
-	
 }
 
 div#content img.left {
@@ -84,29 +91,6 @@ div#content code {
 	background: #F8F8FF;
 	border: 1px solid #DEDEDE;
 	color: #444;
-}
-
-div#flickr {
-	float: left;
-	width: 160px;
-	margin-left: -190px;
-	margin-top: 3em;
-	position: absolute;
-}
-
-div#flickr h2 {
-	margin: 0 0 0.5em 0.1em;
-	color: #ccc;
-	line-height: 1em;
-}
-
-div#flickr ul, div#flickr li {
-	list-style: none;
-}
-
-div#flickr li {
-	float: left;
-	margin-left: 5px;
 }
 
 div#footer {
