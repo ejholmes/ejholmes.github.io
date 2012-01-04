@@ -3,6 +3,6 @@ layout: default
 ---
 <article>
     <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
-    <time>{{ page.date | date_to_string }}</time>
+    <div class="meta">On <time>{{ page.date | date_to_string }}</time> in <span class="tag">{{ page.tag }}</span></div>
     {{ content }}
 </article>

@@ -1,3 +1,7 @@
+task :start do
+  system "foreman start"
+end
+
 namespace :jekyll do
 
   desc 'Delete generated _site files'
