@@ -1,0 +1,10 @@
+<article>
+    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    {% assign tags = post.tags | split:, %}
+    <div class="meta">On <time>{{ post.date | date_to_string }}</time> in {% for tag in tags %}<span class="tag">{{ tag | replace:',','' }}</span>{% endfor %}</div>
+    {% if content %}
+        {{ content }}
+    {% else %}
+        {{ post.content }}
+    {% endif %}
+</article>
