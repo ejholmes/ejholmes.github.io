@@ -52,20 +52,46 @@ div#header ul {
     float: left;
     padding: 0 5px; }
 
-div#content > h1 {
-  margin: 0;
-  font-size: 1.7em; }
-div#content article {
+div#content {
   color: #393939;
   font-size: 1.1em; }
-  div#content article .right {
+  div#content > h1 {
+    margin: 0;
+    font-size: 1.7em; }
+  div#content .right {
     float: right; }
-  div#content article .left {
+  div#content .left {
     float: left; }
-  div#content article h1, div#content article h2, div#content article h3, div#content article h4, div#content article h5 {
+  div#content p, div#content ul, div#content ol {
+    line-height: 1.4em; }
+  div#content h1, div#content h2, div#content h3, div#content h4, div#content h5 {
     color: #000;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.16);
     margin: 1em 0 -0.3em 0; }
+  div#content img {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    max-width: 710px; }
+    div#content img.right {
+      margin: 0 0 1em 1em; }
+    div#content img.left {
+      margin: 0 1em 1em 0; }
+  div#content code {
+    background: #000;
+    color: #fff;
+    font-size: 0.9em;
+    padding: 0 7px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px; }
+  div#content pre code {
+    display: block;
+    line-height: 1.5em;
+    padding: 1.5em;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; }
   div#content article > h1 {
     margin: 0;
     font-size: 1.7em;
@@ -91,42 +117,16 @@ div#content article {
       -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.16);
       -moz-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.16);
       box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.16); }
-  div#content article p, div#content article ul, div#content article ol {
-    line-height: 1.4em; }
-  div#content article img {
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    max-width: 710px; }
-    div#content article img.right {
-      margin: 0 0 1em 1em; }
-    div#content article img.left {
-      margin: 0 1em 1em 0; }
-  div#content article code {
-    background: #000;
-    color: #fff;
-    font-size: 0.9em;
-    padding: 0 7px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px; }
-  div#content article pre code {
-    display: block;
-    line-height: 1.5em;
-    padding: 1.5em;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px; }
-div#content #posts {
-  font-size: 0.8em; }
-div#content #error404 {
-  margin-top: 100px;
-  text-align: center; }
-  div#content #error404 h1 {
-    color: #900;
-    width: 400px; }
-  div#content #error404 img {
-    float: right;
-    position: relative;
-    top: -70px;
-    margin-top: 20px; }
+  div#content #posts {
+    font-size: 0.8em; }
+  div#content #error404 {
+    margin-top: 100px;
+    text-align: center; }
+    div#content #error404 h1 {
+      color: #900;
+      width: 400px; }
+    div#content #error404 img {
+      float: right;
+      position: relative;
+      top: -70px;
+      margin-top: 20px; }
