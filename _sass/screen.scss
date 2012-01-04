@@ -73,25 +73,58 @@ div#header {
 }
 
 div#content {
+  color: #393939;
+  font-size: 1.1em;
+
   & > h1 {
     margin: 0;
     font-size: 1.7em;
   }
-  article {
-    color: #393939;
-    font-size: 1.1em;
+  .right {
+    float: right;
+  }
+  .left {
+    float: left;
+  }
+  p, ul, ol {
+    line-height: 1.4em;
+  }
+  h1, h2, h3, h4, h5 {
+    color: #000;
+    text-shadow: 1px 1px 1px rgba(0,0,0, 0.16);
+    margin: 1em 0 -0.3em 0;
+  }
+  img {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    max-width: $width;
 
-    .right {
-      float: right;
+    &.right {
+      margin: 0 0 1em 1em;
     }
-    .left {
-      float: left;
+    &.left {
+      margin: 0 1em 1em 0;
     }
-    h1, h2, h3, h4, h5 {
-      color: #000;
-      text-shadow: 1px 1px 1px rgba(0,0,0, 0.16);
-      margin: 1em 0 -0.3em 0;
-    }
+  }
+  code {
+    background: #000;
+    color: #fff;
+    font-size: 0.9em;
+    padding: 0 7px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+  }
+  pre code {
+    display: block;
+    line-height: 1.5em;
+    padding: 1.5em;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+  }
+  article {
     & > h1 {
       margin: 0;
       font-size: 1.7em;
@@ -121,39 +154,6 @@ div#content {
         -moz-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.16);
         box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.16);
       }
-    }
-    p, ul, ol {
-      line-height: 1.4em;
-    }
-    img {
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      border-radius: 5px;
-      max-width: $width;
-
-      &.right {
-        margin: 0 0 1em 1em;
-      }
-      &.left {
-        margin: 0 1em 1em 0;
-      }
-    }
-    code {
-      background: #000;
-      color: #fff;
-      font-size: 0.9em;
-      padding: 0 7px;
-      -moz-border-radius: 3px;
-      -webkit-border-radius: 3px;
-      border-radius: 3px;
-    }
-    pre code {
-      display: block;
-      line-height: 1.5em;
-      padding: 1.5em;
-      -moz-border-radius: 10px;
-      -webkit-border-radius: 10px;
-      border-radius: 10px;
     }
   }
 
