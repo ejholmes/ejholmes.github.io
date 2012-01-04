@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" src="/js/application.js"></script>
 
+    <link rel="stylesheet" href="/css/normalize.css" type="text/css" />
 	<link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
     <link rel="stylesheet" href="/css/pygments.css" type="text/css" />
 	
@@ -17,18 +18,20 @@
 </head>
 <body>
 	<div id="container">
-		<div id="header">
-			<ul>
-				<li><a href="/">Home</a></li>
-				<li><a href="http://github.com/ejholmes">Github</a></li>
-				<li><a href="/about.html">About Me</a></li>
-			</ul>
-		</div>
-		<div class="clear"></div>
+        <div id="header">
+            <ul>
+                <li class="first"><a href="/">Eric Holmes</a></li>
+                <li><a href="/posts.html">Posts</a></li>
+                <li><a target="_blank" href="http://github.com/ejholmes">Github</a></li>
+                <li><a href="/about.html">About Me</a></li>
+            </ul>
+            <div id="search">
+                <input type="text" name="search" />
+            </div>
+        </div>
         <div id="content">
 			{{ content }}
         </div>
-		{% include footer.html %}
 	</div>
     <script type="text/javascript">
 

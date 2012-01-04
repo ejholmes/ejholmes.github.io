@@ -7,7 +7,7 @@ title: home
     <article>
         {% assign first_post = site.posts.first %}
         <h1><a href="{{ first_post.url }}">{{ first_post.title }}</a></h1>
-        <time>{{ first_post.date | date_to_string }}</time>
+        <div class="meta">On <time>{{ first_post.date | date_to_string }}</time> in <span class="tag">{{ first_post.tag }}</span></div>
         {{ first_post.content }}
     </article>
 </div>
