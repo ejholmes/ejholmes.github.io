@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Installing Mac OS X Snow Leopard on ASUS P5N-E SLI
-tags: Mac
+tags: [OS X]
 ---
 
 Specs

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Force.com - Using Custom Labels as Global Settings
-tags: Force.com
+tags: [Force.com]
 ---
 
 One of the biggest annoyances about Force.com development is the lack of customizable global settings/key value store. Recently, I needed a way to store a single value that I could access globally through Visualforce and Apex classes, but I didn't want to rely on writing custom controllers and unecessary code to perform a very simple task that 99% of other languages/frameworks offer.

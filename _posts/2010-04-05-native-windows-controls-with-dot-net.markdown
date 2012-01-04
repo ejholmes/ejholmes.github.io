@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Native Windows Controls in .NET
-tags: .NET
+tags: [.NET]
 ---
 <img src="http://farm5.static.flickr.com/4067/4492960730_4226e218ab_o.jpg" class="right" />
 I came across a very frustrating issue while writing [uTorrent Notifier](http://ejholmes.github.com/uTorrent-Notifier/); the fact that the default context menu/main menu controls look absolutely hideous. They use the Office 2007 look and feel and I think I speak for most people when I say that Office 2007 was not exactly the holy grail of good design. However, the Windows Vista/7 context menu's look very sleek.

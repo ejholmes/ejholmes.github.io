@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Arduino Focuser
-tags: Astronomy, Hardward, Arduino
+tags: [Astronomy, Hardware, Arduino]
 ---
 
 <strong>UPDATE:</strong> The Ardunio Focuser was just featured in the October issue of Astronomy Now magazine in the UK. Read about it on page 76-77!
