@@ -119,3 +119,14 @@ div#content article {
     border-radius: 10px; }
 div#content #posts {
   font-size: 0.8em; }
+div#content #error404 {
+  margin-top: 100px;
+  text-align: center; }
+  div#content #error404 h1 {
+    color: #900;
+    width: 400px; }
+  div#content #error404 img {
+    float: right;
+    position: relative;
+    top: -70px;
+    margin-top: 20px; }
