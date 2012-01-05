@@ -97,7 +97,7 @@ div#content {
   div#content article > h1 {
     margin: 0;
     font-size: 1.7em;
-    width: 70%; }
+    /* width: 70%; */ }
   div#content article h2, div#content article h3, div#content article h4, div#content article h5 {
     margin: 1em 0 -0.3em 0; }
   div#content article div.meta {
