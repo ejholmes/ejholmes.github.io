@@ -92,7 +92,6 @@ div#content {
   h1, h2, h3, h4, h5 {
     color: #000;
     text-shadow: 1px 1px 1px rgba(0,0,0, 0.16);
-    margin: 1em 0 -0.3em 0;
   }
   img {
     -webkit-border-radius: 5px;
@@ -125,10 +124,18 @@ div#content {
     display: inline-block;
   }
   article {
+    &.detail {
+      border-bottom: 3px solid #dadada;
+      padding-bottom: 20px;
+      margin-bottom: 40px;
+    }
     & > h1 {
       margin: 0;
       font-size: 1.7em;
       width: 70%;
+    }
+    h2, h3, h4, h5 {
+      margin: 1em 0 -0.3em 0;
     }
     div.meta {
       color: #aaa;
