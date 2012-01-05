@@ -66,8 +66,7 @@ div#content {
     line-height: 1.4em; }
   div#content h1, div#content h2, div#content h3, div#content h4, div#content h5 {
     color: #000;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.16);
-    margin: 1em 0 -0.3em 0; }
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.16); }
   div#content img {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -78,24 +77,29 @@ div#content {
     div#content img.left {
       margin: 0 1em 1em 0; }
   div#content code {
+    font-size: 0.9em; }
+  div#content pre {
     background: #000;
     color: #fff;
-    font-size: 0.9em;
-    padding: 0 7px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px; }
-  div#content pre code {
-    display: block;
     line-height: 1.5em;
-    padding: 1.5em;
+    padding: 1em 1.5em;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
-    border-radius: 10px; }
+    border-radius: 10px;
+    white-space: pre;
+    overflow: auto; }
+  div#content pre code {
+    display: inline-block; }
+  div#content article.detail {
+    border-bottom: 3px solid #dadada;
+    padding-bottom: 20px;
+    margin-bottom: 40px; }
   div#content article > h1 {
     margin: 0;
     font-size: 1.7em;
     width: 70%; }
+  div#content article h2, div#content article h3, div#content article h4, div#content article h5 {
+    margin: 1em 0 -0.3em 0; }
   div#content article div.meta {
     color: #aaa;
     font-style: italic;
