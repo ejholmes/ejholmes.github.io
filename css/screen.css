@@ -78,20 +78,19 @@ div#content {
     div#content img.left {
       margin: 0 1em 1em 0; }
   div#content code {
+    font-size: 0.9em; }
+  div#content pre {
     background: #000;
     color: #fff;
-    font-size: 0.9em;
-    padding: 0 7px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px; }
-  div#content pre code {
-    display: block;
     line-height: 1.5em;
-    padding: 1.5em;
+    padding: 1em 1.5em;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
-    border-radius: 10px; }
+    border-radius: 10px;
+    white-space: pre;
+    overflow: auto; }
+  div#content pre code {
+    display: inline-block; }
   div#content article > h1 {
     margin: 0;
     font-size: 1.7em;
