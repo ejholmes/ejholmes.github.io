@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Serif);
+
 $width: 710px;
 $link-color: #551a8b;
 
@@ -65,7 +67,7 @@ div#container {
 }
 
 div#header {
-  #search, ul {
+  #search, ul, #logo {
     position: absolute;
   }
   #search {
@@ -75,6 +77,20 @@ div#header {
       font-family: Arial, sans-serif;
       border: 2px solid #eaeaea;
       @include border-radius(5px);
+    }
+  }
+  #logo {
+    font-family: 'PT Serif', Georgia, serif;
+    font-size: 1.5em;
+    top: -1.7em;
+
+    a {
+      color: rgba(85, 26, 139, 0.3);
+      @include transition(color 0.5s ease-in-out);
+
+      &:hover {
+        color: $link-color;
+      }
     }
   }
   ul {
@@ -173,7 +189,6 @@ div#content {
     & > h1 {
       margin: 0;
       font-size: 1.7em;
-      /* width: 70%; */
     }
     h2, h3, h4, h5 {
       margin: 1em 0 -0.3em 0;
