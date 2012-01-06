@@ -1,17 +1,36 @@
 $width: 710px;
 $link-color: #551a8b;
 
+/* CSS3 border radius */
+@mixin border-radius($width) {
+    -moz-border-radius: $width;
+    -webkit-border-radius: $width;
+    border-radius: $width;
+}
+
+/* CSS3 box shadow */
+@mixin box-shadow($arg) {
+  -webkit-box-shadow: $arg;
+  -moz-box-shadow: $arg;
+  box-shadow: $arg;
+}
+
+/* CSS3 transition */
+@mixin transition($arg) {
+  -webkit-transition: $arg;
+  -moz-transition: $arg;
+  -o-transition: $arg;
+  -ms-transition: $arg;
+  transition: $arg;
+}
+
 body {
   font-family: Georgia, serif;
 }
 
 a {
   text-decoration: none;
-  -webkit-transition: color 0.5s ease-in-out;
-  -moz-transition: color 0.5s ease-in-out;
-  -o-transition: color 0.5s ease-in-out;
-  -ms-transition: color 0.5s ease-in-out;	
-  transition: color 0.5s ease-in-out;
+  @include transition(color 0.5s ease-in-out);
 
   &:link {
     color: $link-color;
@@ -26,6 +45,10 @@ a {
   &:active {
     color: $link-color;
   }
+}
+
+.clear {
+  clear: both;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -51,9 +74,7 @@ div#header {
     input {
       font-family: Arial, sans-serif;
       border: 2px solid #eaeaea;
-      -moz-border-radius: 5px;
-      -webkit-border-radius: 5px;
-      border-radius: 5px;
+      @include border-radius(5px);
     }
   }
   ul {
@@ -86,6 +107,24 @@ div#content {
   .left {
     float: left;
   }
+  div.navigation {
+    margin-bottom: 10px;
+    @include transition(color 0.1s ease-in-out);
+
+    a {
+      color: rgba(85, 26, 139, 0.2);
+
+      &:hover {
+        color: $link-color;
+      }
+    }
+    a.previous {
+      float: left;
+    }
+    a.next {
+      float: right;
+    }
+  }
   p, ul, ol {
     line-height: 1.4em;
   }
@@ -94,10 +133,8 @@ div#content {
     text-shadow: 1px 1px 1px rgba(0,0,0, 0.16);
   }
   img {
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
     max-width: $width;
+    @include border-radius(5px);
 
     &.right {
       margin: 0 0 1em 1em;
@@ -114,11 +151,9 @@ div#content {
     color: #fff;
     line-height: 1.5em;
     padding: 1em 1.5em;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
     white-space: pre;
     overflow: auto;
+    @include border-radius(10px);
   }
   pre code {
     display: inline-block;
@@ -154,12 +189,8 @@ div#content {
         background: #eae5f9;
         padding: 1px 10px;
         margin: 0 3px;
-        -moz-border-radius: 6px;
-        -webkit-border-radius: 6px;
-        border-radius: 6px;
-        -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.16);
-        -moz-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.16);
-        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.16);
+        @include box-shadow(1px 1px 1px 1px rgba(0, 0, 0, 0.16));
+        @include border-radius(6px);
       }
     }
   }
