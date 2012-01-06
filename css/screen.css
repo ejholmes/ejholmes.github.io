@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Serif);
 /* CSS3 border radius */
 /* CSS3 box shadow */
 /* CSS3 transition */
@@ -35,7 +36,7 @@ div#container {
   padding-top: 20px;
   border-top: 3px solid #dadada; }
 
-div#header #search, div#header ul {
+div#header #search, div#header ul, div#header #logo {
   position: absolute; }
 div#header #search {
   top: 0.5em;
@@ -46,6 +47,19 @@ div#header #search {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px; }
+div#header #logo {
+  font-family: 'PT Serif', Georgia, serif;
+  font-size: 1.5em;
+  top: -1.7em; }
+  div#header #logo a {
+    color: #ffbb00;
+    -webkit-transition: color 0.5s ease-in-out;
+    -moz-transition: color 0.5s ease-in-out;
+    -o-transition: color 0.5s ease-in-out;
+    -ms-transition: color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out; }
+    div#header #logo a:hover {
+      color: #fb0; }
 div#header ul {
   top: -2em;
   right: 0;
@@ -121,8 +135,7 @@ div#content {
     margin-bottom: 40px; }
   div#content article > h1 {
     margin: 0;
-    font-size: 1.7em;
-    /* width: 70%; */ }
+    font-size: 1.7em; }
   div#content article h2, div#content article h3, div#content article h4, div#content article h5 {
     margin: 1em 0 -0.3em 0; }
   div#content article div.meta {
