@@ -97,6 +97,10 @@ div#content {
       margin: 0 0 1em 1em; }
     div#content img.left {
       margin: 0 1em 1em 0; }
+    div#content img.half {
+      max-width: 355px; }
+    div#content img.two-thirds {
+      max-width: 473.333px; }
   div#content code {
     font-size: 0.9em; }
   div#content pre {
@@ -142,6 +146,12 @@ div#content {
       -moz-border-radius: 6px;
       -webkit-border-radius: 6px;
       border-radius: 6px; }
+  div#content .social {
+    float: right; }
+    div#content .social a {
+      display: block;
+      float: left;
+      padding: 0 5px; }
   div#content #posts {
     font-size: 0.8em; }
   div#content #error404 {
