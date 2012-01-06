@@ -5,10 +5,10 @@ layout: default
 {% assign post = page %}
 <div class="navigation">
     {% if post.previous.url %}
-        <a class="previous" title="Previous Post: {{post.previous.title}}" href="{{post.previous.url}}">&laquo;{{post.previous.title | truncate: 30}}</a>
+        <a class="previous" title="Previous Post: {{post.previous.title}}" href="{{post.previous.url}}">&laquo; {{post.previous.title | truncate: 30}}</a>
     {% endif %}
     {% if post.next.url %}
-        <a class="next" title="next Post: {{post.next.title}}" href="{{post.next.url}}">{{post.next.title | truncate: 30}}&raquo;</a>
+        <a class="next" title="next Post: {{post.next.title}}" href="{{post.next.url}}">{{post.next.title | truncate: 30}} &raquo;</a>
     {% endif %}
     <div class="clear"></div>
 </div>
