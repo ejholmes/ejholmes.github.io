@@ -178,3 +178,22 @@ div#content {
       position: relative;
       top: -70px;
       margin-top: 20px; }
+
+@media screen and (max-device-width: 480px) {
+  div#container {
+    width: 300px;
+    margin-top: 80px; }
+
+  div#header #logo {
+    top: -3em; }
+
+  div#header ul {
+    left: -5px;
+    right: auto; }
+
+  div#content img {
+    max-width: 300px; }
+
+  div#content .social a {
+    float: none;
+    margin-bottom: 3px; } }
