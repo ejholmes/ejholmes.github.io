@@ -52,14 +52,14 @@ div#header #logo {
   font-size: 1.5em;
   top: -1.7em; }
   div#header #logo a {
-    color: rgba(85, 26, 139, 0.3);
+    color: #ffbb00;
     -webkit-transition: color 0.5s ease-in-out;
     -moz-transition: color 0.5s ease-in-out;
     -o-transition: color 0.5s ease-in-out;
     -ms-transition: color 0.5s ease-in-out;
     transition: color 0.5s ease-in-out; }
     div#header #logo a:hover {
-      color: #551a8b; }
+      color: #fb0; }
 div#header ul {
   top: -2em;
   right: 0;
