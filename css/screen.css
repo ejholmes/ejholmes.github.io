@@ -1,3 +1,6 @@
+/* CSS3 border radius */
+/* CSS3 box shadow */
+/* CSS3 transition */
 body {
   font-family: Georgia, serif; }
 
@@ -17,6 +20,9 @@ a {
     color: #250a5b; }
   a:active {
     color: #551a8b; }
+
+.clear {
+  clear: both; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal; }
@@ -62,16 +68,31 @@ div#content {
     float: right; }
   div#content .left {
     float: left; }
+  div#content div.navigation {
+    margin-bottom: 10px;
+    -webkit-transition: color 0.1s ease-in-out;
+    -moz-transition: color 0.1s ease-in-out;
+    -o-transition: color 0.1s ease-in-out;
+    -ms-transition: color 0.1s ease-in-out;
+    transition: color 0.1s ease-in-out; }
+    div#content div.navigation a {
+      color: rgba(85, 26, 139, 0.2); }
+      div#content div.navigation a:hover {
+        color: #551a8b; }
+    div#content div.navigation a.previous {
+      float: left; }
+    div#content div.navigation a.next {
+      float: right; }
   div#content p, div#content ul, div#content ol {
     line-height: 1.4em; }
   div#content h1, div#content h2, div#content h3, div#content h4, div#content h5 {
     color: #000;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.16); }
   div#content img {
-    -webkit-border-radius: 5px;
+    max-width: 710px;
     -moz-border-radius: 5px;
-    border-radius: 5px;
-    max-width: 710px; }
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
     div#content img.right {
       margin: 0 0 1em 1em; }
     div#content img.left {
@@ -83,11 +104,11 @@ div#content {
     color: #fff;
     line-height: 1.5em;
     padding: 1em 1.5em;
+    white-space: pre;
+    overflow: auto;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
-    border-radius: 10px;
-    white-space: pre;
-    overflow: auto; }
+    border-radius: 10px; }
   div#content pre code {
     display: inline-block; }
   div#content article.detail {
@@ -115,12 +136,12 @@ div#content {
       background: #eae5f9;
       padding: 1px 10px;
       margin: 0 3px;
-      -moz-border-radius: 6px;
-      -webkit-border-radius: 6px;
-      border-radius: 6px;
       -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.16);
       -moz-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.16);
-      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.16); }
+      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.16);
+      -moz-border-radius: 6px;
+      -webkit-border-radius: 6px;
+      border-radius: 6px; }
   div#content #posts {
     font-size: 0.8em; }
   div#content #error404 {
