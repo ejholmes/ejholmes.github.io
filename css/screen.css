@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal; }
 
 div#container {
-  width: 710px;
+  width: 800px;
   margin: 0 auto;
   position: relative;
   margin-top: 40px;
@@ -53,6 +53,7 @@ div#header #logo {
   top: -1.7em; }
   div#header #logo a {
     color: #ffbb00;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.56);
     -webkit-transition: color 0.5s ease-in-out;
     -moz-transition: color 0.5s ease-in-out;
     -o-transition: color 0.5s ease-in-out;
@@ -60,6 +61,8 @@ div#header #logo {
     transition: color 0.5s ease-in-out; }
     div#header #logo a:hover {
       color: #fb0; }
+  div#header #logo span {
+    color: #999; }
 div#header ul {
   top: -2em;
   right: 0;
@@ -103,7 +106,7 @@ div#content {
     color: #000;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.16); }
   div#content img {
-    max-width: 710px;
+    max-width: 800px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px; }
@@ -112,9 +115,9 @@ div#content {
     div#content img.left {
       margin: 0 1em 1em 0; }
     div#content img.half {
-      max-width: 355px; }
+      max-width: 400px; }
     div#content img.two-thirds {
-      max-width: 473.333px; }
+      max-width: 533.333px; }
   div#content code {
     font-size: 0.9em; }
   div#content pre {
