@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Serif);
 
-$width: 710px;
+$width: 800px;
 $link-color: #551a8b;
 
 /* CSS3 border radius */
@@ -86,11 +86,15 @@ div#header {
 
     a {
       color: rgba(255, 187, 0, 1.0);
+      text-shadow: 1px 1px 0px rgba(0,0,0, 0.56);
       @include transition(color 0.5s ease-in-out);
 
       &:hover {
         color: #fb0;
       }
+    }
+    span {
+      color: #999;
     }
   }
   ul {
