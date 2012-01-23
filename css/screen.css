@@ -3,7 +3,7 @@
 /* CSS3 box shadow */
 /* CSS3 transition */
 body {
-  font-family: Georgia, serif; }
+  font-family: Palatino, Georgia, serif; }
 
 a {
   text-decoration: none;
@@ -76,11 +76,11 @@ div#header ul {
     padding: 0 5px; }
 
 div#content {
-  color: #393939;
-  font-size: 1.1em; }
+  color: #191919;
+  font-size: 1.3em; }
   div#content > h1 {
     margin: 0;
-    font-size: 1.7em; }
+    font-size: 2.0em; }
   div#content .right {
     float: right; }
   div#content .left {

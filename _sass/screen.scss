@@ -27,7 +27,7 @@ $link-color: #551a8b;
 }
 
 body {
-  font-family: Georgia, serif;
+  font-family: Palatino, Georgia, serif;
 }
 
 a {
@@ -114,12 +114,12 @@ div#header {
 }
 
 div#content {
-  color: #393939;
-  font-size: 1.1em;
+  color: #191919;
+  font-size: 1.3em;
 
   & > h1 {
     margin: 0;
-    font-size: 1.7em;
+    font-size: 2.0em;
   }
   .right {
     float: right;
