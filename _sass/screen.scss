@@ -177,6 +177,12 @@ div#content {
   pre code {
     display: inline-block;
   }
+  .gist {
+    font-size: 0.8em;
+  }
+  .gist-highlight pre {
+    color: #000;
+  }
   article {
     &.detail {
       border-bottom: 3px solid #dadada;

@@ -128,6 +128,10 @@ div#content {
     border-radius: 10px; }
   div#content pre code {
     display: inline-block; }
+  div#content .gist {
+    font-size: 0.8em; }
+  div#content .gist-highlight pre {
+    color: #000; }
   div#content article.detail {
     border-bottom: 3px solid #dadada;
     padding-bottom: 20px;
