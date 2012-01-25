@@ -24,9 +24,7 @@ Add the following lines to your `~/.zshrc` or `~/.bash_profile`.
     export PATH="$HOME/.rbenv/bin:$PATH"
     eval "$(rbenv init -)"
 
-Now restart your terminal.
-
-Install [ruby-build](https://github.com/sstephenson/ruby-build):
+Restart your terminal then install [ruby-build](https://github.com/sstephenson/ruby-build):
 
     $ cd
     $ git clone git://github.com/sstephenson/ruby-build.git
@@ -39,14 +37,26 @@ Install the latest version of Ruby (`1.9.3-p0`) and activate it:
     $ rbenv global 1.9.3-p0
     $ rbenv rehash
 
+Restart the terminal again, then update RubyGems:
+
+    $ gem update --system
+
 rbenv makes use of shims for all binaries, including gems. When you install a
 new gem, you need to run `rbenv rehash` to generate the shims. This can be done
 automatically by installing the `rbenv-rehash` gem:
 
     $ gem install rbenv-rehash
 
+Last but not least, you'll probably want to install bundler:
+
+    $ gem install bundler
+
 rbenv can make use of gemsets by installing the [rbenv-gemset](https://github.com/jamis/rbenv-gemset)
 plugin, however, the preferred method is to use bundler to manage gem dependencies. If
 you use [oh my zsh](https://github.com/robbyrussell/oh-my-zsh), you can
 activate the bundler plugin, which allows you to run gem executables without
 prefixing them with `bundle exec`.
+
+Just add the following to your `~/.zshrc`:
+
+    plugins=(bundler)
