@@ -1,5 +1,5 @@
 <article {% if detail %} class="detail" {% endif %}>
-    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    <h1 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
     {% if content %}
         {{ content }}
     {% else %}
