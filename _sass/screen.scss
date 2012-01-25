@@ -229,17 +229,18 @@ div#content {
 
 @media screen and (max-device-width: 480px) {
   div#container {
+    padding: 10px;
     width: 300px;
-    margin-top: 80px;
   }
 
   div#header #logo {
-    top: -3em;
+    margin-bottom: 0.3em;
   }
 
   div#header ul {
-    left: -5px;
-    right: auto;
+    clear: both;
+    float: left;
+    margin-left: -5px;
   }
 
   div#content img {
