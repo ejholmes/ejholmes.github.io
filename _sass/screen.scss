@@ -146,7 +146,7 @@ div#content {
     text-shadow: 1px 1px 1px rgba(0,0,0, 0.16);
   }
   img {
-    max-width: $width;
+    max-width: $width + 40px;
     @include border-radius(5px);
 
     &.right {
