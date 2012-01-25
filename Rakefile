@@ -1,3 +1,5 @@
+task :default => :start
+
 desc 'Start the jekyll server'
 task :start do
   system "foreman start"
