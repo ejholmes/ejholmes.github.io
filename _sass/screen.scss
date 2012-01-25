@@ -119,7 +119,6 @@ div#content {
 
   & > h1 {
     margin: 0;
-    font-size: 2.0em;
   }
   .right {
     float: right;
@@ -149,6 +148,7 @@ div#content {
     line-height: 1.4em;
   }
   h1, h2, h3, h4, h5 {
+    font-family: 'Patua One', Palatino, Georgia, serif;
     color: #000;
     text-shadow: 1px 1px 1px rgba(0,0,0, 0.16);
   }
@@ -190,7 +190,7 @@ div#content {
       padding-bottom: 20px;
       margin-bottom: 40px;
     }
-    & > h1 {
+    h1.title {
       margin: 0;
       font-size: 1.7em;
     }
@@ -200,7 +200,9 @@ div#content {
   }
 
   .social {
+    margin-top: 0.9em;
     float: right;
+
     a {
       display: block;
       float: left;
