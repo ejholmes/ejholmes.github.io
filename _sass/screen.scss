@@ -28,6 +28,7 @@ $link-color: #551a8b;
 
 body {
   font-family: Palatino, Georgia, serif;
+  background: #f2f2f2;
 }
 
 a {
@@ -58,31 +59,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 div#container {
-  width: $width;
+  background: #fff;
+  width: $width + 40px;
   margin: 0 auto;
   position: relative;
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: 3px solid #dadada;
+  padding: 10px 20px;
+  @include box-shadow(0 1px 4px #999);
 }
 
 div#header {
-  #search, ul, #logo {
-    position: absolute;
-  }
-  #search {
-    top: 0.5em;
-    right: 0;
-    input {
-      font-family: Arial, sans-serif;
-      border: 2px solid #eaeaea;
-      @include border-radius(5px);
-    }
-  }
+  margin-bottom: 1em;
+  border-bottom: 3px solid #d9d9d9;
+  padding-bottom: 0.3em;
+
   #logo {
+    margin-top: -0.3em;
+    float: left;
     font-family: 'Patua One', Georgia, serif;
     font-size: 1.5em;
-    top: -1.6em;
 
     a {
       color: rgba(255, 187, 0, 0.7);
@@ -98,8 +92,7 @@ div#header {
     }
   }
   ul {
-    top: -1.9em;
-    right: 0;
+    float: right;
     display: block;
     padding: 0;
     margin: 0;
@@ -236,17 +229,18 @@ div#content {
 
 @media screen and (max-device-width: 480px) {
   div#container {
+    padding: 10px;
     width: 300px;
-    margin-top: 80px;
   }
 
   div#header #logo {
-    top: -3em;
+    margin-bottom: 0.3em;
   }
 
   div#header ul {
-    left: -5px;
-    right: auto;
+    clear: both;
+    float: left;
+    margin-left: -5px;
   }
 
   div#content img {
