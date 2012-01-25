@@ -119,12 +119,12 @@ div#content {
     div#content img.two-thirds {
       max-width: 533.333px; }
   div#content code {
-    font-size: 0.9em; }
+    font-size: 0.75em; }
   div#content pre {
     background: #000;
     color: #fff;
-    line-height: 1.5em;
-    padding: 1em 1.5em;
+    line-height: 1.3em;
+    padding: 0.5em 1em;
     white-space: pre;
     overflow: auto;
     -moz-border-radius: 10px;
