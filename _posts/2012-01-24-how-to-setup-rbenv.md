@@ -17,39 +17,53 @@ Installation
 
 Install rbenv from GitHub:
 
-    $ git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
+{% highlight bash %}
+$ git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
+{% endhighlight %}
 
 Add the following lines to your `~/.zshrc` or `~/.bash_profile`.
 
-    export PATH="$HOME/.rbenv/bin:$PATH"
-    eval "$(rbenv init -)"
+{% highlight bash %}
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+{% endhighlight %}
 
 Restart your terminal then install [ruby-build](https://github.com/sstephenson/ruby-build):
 
-    $ cd
-    $ git clone git://github.com/sstephenson/ruby-build.git
-    $ cd ruby-build
-    $ [sudo] ./install.sh
+{% highlight bash %}
+$ cd
+$ git clone git://github.com/sstephenson/ruby-build.git
+$ cd ruby-build
+$ [sudo] ./install.sh
+{% endhighlight %}
 
 Install the latest version of Ruby (`1.9.3-p0`) and activate it:
 
-    $ rbenv install 1.9.3-p0
-    $ rbenv global 1.9.3-p0
-    $ rbenv rehash
+{% highlight bash %}
+$ rbenv install 1.9.3-p0
+$ rbenv global 1.9.3-p0
+$ rbenv rehash
+{% endhighlight %}
 
 Restart the terminal again, then update RubyGems:
 
-    $ gem update --system
+{% highlight bash %}
+$ gem update --system
+{% endhighlight %}
 
 rbenv makes use of shims for all binaries, including gems. When you install a
 new gem, you need to run `rbenv rehash` to generate the shims. This can be done
 automatically by installing the `rbenv-rehash` gem:
 
-    $ gem install rbenv-rehash
+{% highlight bash %}
+$ gem install rbenv-rehash
+{% endhighlight %}
 
 Last but not least, you'll probably want to install bundler:
 
-    $ gem install bundler
+{% highlight bash %}
+$ gem install bundler
+{% endhighlight %}
 
 rbenv can make use of gemsets by installing the [rbenv-gemset](https://github.com/jamis/rbenv-gemset)
 plugin, however, the preferred method is to use bundler to manage gem dependencies. If
@@ -59,4 +73,6 @@ prefixing them with `bundle exec`.
 
 Just add the following to your `~/.zshrc`:
 
-    plugins=(bundler)
+{% highlight bash %}
+plugins=(bundler)
+{% endhighlight %}
