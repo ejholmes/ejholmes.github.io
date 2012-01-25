@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=PT+Serif);
+@import url(http://fonts.googleapis.com/css?family=Patua+One);
 /* CSS3 border radius */
 /* CSS3 box shadow */
 /* CSS3 transition */
@@ -48,12 +48,12 @@ div#header #search {
     -webkit-border-radius: 5px;
     border-radius: 5px; }
 div#header #logo {
-  font-family: 'PT Serif', Georgia, serif;
+  font-family: 'Patua One', Georgia, serif;
   font-size: 1.5em;
-  top: -1.7em; }
+  top: -1.6em; }
   div#header #logo a {
-    color: #ffbb00;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.66);
+    color: rgba(255, 187, 0, 0.7);
+    /* text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.66); */
     -webkit-transition: color 0.5s ease-in-out;
     -moz-transition: color 0.5s ease-in-out;
     -o-transition: color 0.5s ease-in-out;
@@ -64,7 +64,7 @@ div#header #logo {
   div#header #logo span {
     color: #999; }
 div#header ul {
-  top: -2em;
+  top: -1.9em;
   right: 0;
   display: block;
   padding: 0;

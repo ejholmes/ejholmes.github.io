@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=PT+Serif);
+@import url(http://fonts.googleapis.com/css?family=Patua+One);
 
 $width: 800px;
 $link-color: #551a8b;
@@ -80,13 +80,13 @@ div#header {
     }
   }
   #logo {
-    font-family: 'PT Serif', Georgia, serif;
+    font-family: 'Patua One', Georgia, serif;
     font-size: 1.5em;
-    top: -1.7em;
+    top: -1.6em;
 
     a {
-      color: rgba(255, 187, 0, 1.0);
-      text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.66);
+      color: rgba(255, 187, 0, 0.7);
+      /* text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.66); */
       @include transition(color 0.5s ease-in-out);
 
       &:hover {
@@ -98,7 +98,7 @@ div#header {
     }
   }
   ul {
-    top: -2em;
+    top: -1.9em;
     right: 0;
     display: block;
     padding: 0;
