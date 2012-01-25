@@ -5,4 +5,5 @@
     {% else %}
         {{ post.content }}
     {% endif %}
+    <div class="meta">Posted on <time>{{ post.date | date_to_string }}</time> in <span class="tags">{{ post.tags | join:', ' }}</span></div>
 </article>
