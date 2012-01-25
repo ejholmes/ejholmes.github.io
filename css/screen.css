@@ -3,7 +3,8 @@
 /* CSS3 box shadow */
 /* CSS3 transition */
 body {
-  font-family: Palatino, Georgia, serif; }
+  font-family: Palatino, Georgia, serif;
+  background: #f2f2f2; }
 
 a {
   text-decoration: none;
@@ -29,51 +30,46 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal; }
 
 div#container {
-  width: 800px;
+  background: #fff;
+  width: 840px;
   margin: 0 auto;
   position: relative;
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: 3px solid #dadada; }
+  padding: 10px 20px;
+  -webkit-box-shadow: 0 1px 4px #999999;
+  -moz-box-shadow: 0 1px 4px #999999;
+  box-shadow: 0 1px 4px #999999; }
 
-div#header #search, div#header ul, div#header #logo {
-  position: absolute; }
-div#header #search {
-  top: 0.5em;
-  right: 0; }
-  div#header #search input {
-    font-family: Arial, sans-serif;
-    border: 2px solid #eaeaea;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px; }
-div#header #logo {
-  font-family: 'Patua One', Georgia, serif;
-  font-size: 1.5em;
-  top: -1.6em; }
-  div#header #logo a {
-    color: rgba(255, 187, 0, 0.7);
-    /* text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.66); */
-    -webkit-transition: color 0.5s ease-in-out;
-    -moz-transition: color 0.5s ease-in-out;
-    -o-transition: color 0.5s ease-in-out;
-    -ms-transition: color 0.5s ease-in-out;
-    transition: color 0.5s ease-in-out; }
-    div#header #logo a:hover {
-      color: #fb0; }
-  div#header #logo span {
-    color: #999; }
-div#header ul {
-  top: -1.9em;
-  right: 0;
-  display: block;
-  padding: 0;
-  margin: 0;
-  list-style: none; }
-  div#header ul li {
-    display: block;
+div#header {
+  margin-bottom: 1em;
+  border-bottom: 3px solid #d9d9d9;
+  padding-bottom: 0.3em; }
+  div#header #logo {
+    margin-top: -0.3em;
     float: left;
-    padding: 0 5px; }
+    font-family: 'Patua One', Georgia, serif;
+    font-size: 1.5em; }
+    div#header #logo a {
+      color: rgba(255, 187, 0, 0.7);
+      /* text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.66); */
+      -webkit-transition: color 0.5s ease-in-out;
+      -moz-transition: color 0.5s ease-in-out;
+      -o-transition: color 0.5s ease-in-out;
+      -ms-transition: color 0.5s ease-in-out;
+      transition: color 0.5s ease-in-out; }
+      div#header #logo a:hover {
+        color: #fb0; }
+    div#header #logo span {
+      color: #999; }
+  div#header ul {
+    float: right;
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+    div#header ul li {
+      display: block;
+      float: left;
+      padding: 0 5px; }
 
 div#content {
   color: #191919;
