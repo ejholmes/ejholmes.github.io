@@ -8,7 +8,7 @@ tags:
 ---
 
 [rbenv](https://github.com/sstephenson/rbenv) is a tool for managing
-ruby versions on your system. It's similar to [RVM](http://beginrescueend.com/) but doesn't require
+ruby versions. It's similar to [RVM](http://beginrescueend.com/) but doesn't require
 configuration files. Instead of using gemsets, the user is expected to make
 use of [bundler](http://gembundler.com/) to manage gem dependencies.
 
