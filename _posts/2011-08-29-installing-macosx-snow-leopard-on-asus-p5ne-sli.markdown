@@ -4,22 +4,19 @@ title: Installing Mac OS X Snow Leopard on ASUS P5N-E SLI
 tags: [OS X]
 ---
 
-Specs
------
+### Specs
 * [ASUS P5N-E SLI Motherboard](http://www.newegg.com/Product/Product.aspx?Item=N82E16813131142)
 * [Intel Core 2 Quad Q6600](http://www.newegg.com/Product/Product.aspx?Item=N82E16819115017)
 * [Western Digital Caviar Blue Hard Drive](http://www.newegg.com/Product/Product.aspx?Item=N82E16822136770)
 * NVIDIA GT 240
 * [TRENDnet USB Ethernet adapter](http://www.amazon.com/gp/product/B00007IFED)
 
-What you'll need
-----------------
+### What you'll need
 * [Snow Leopard](http://store.apple.com/us/product/MC573Z/A)
 * [Empire EFI](http://www.mediafire.com/?thd5nmo2oyn)
 * IDE DVD Drive (SATA Drive's won't work, it will stall with "Still waiting for root device")
 
-Instructions
-------------
+### Instructions
 1. Burn Empire EFI Legacy (iBoot may also work using this method)
 2. Boot Empire EFI
 3. Remove Empire EFI from the DVD Drive. Insert Snow Leopard and press F5

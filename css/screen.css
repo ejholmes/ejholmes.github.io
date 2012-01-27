@@ -140,7 +140,17 @@ div#content {
     margin: 0;
     font-size: 1.7em; }
   div#content article h2, div#content article h3, div#content article h4, div#content article h5 {
-    margin: 1em 0 -0.3em 0; }
+    margin: 1em 0 -0.3em -1.5em;
+    color: #fff;
+    padding: 0.4em 0.8em;
+    padding-left: 1.4em;
+    background-color: #666;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 1px 0px #333333;
+    -moz-box-shadow: 1px 1px 0px #333333;
+    box-shadow: 1px 1px 0px #333333; }
   div#content article .meta {
     margin-top: 2em;
     font-size: 0.9em;
