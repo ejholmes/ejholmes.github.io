@@ -76,3 +76,8 @@ Just add the following to your `~/.zshrc`:
 {% highlight bash %}
 plugins=(bundler)
 {% endhighlight %}
+
+And, just in case you want a system wide installation on a linux server, here's
+the code to set that up on Ubuntu 10.04, courtesy of [@benwoodward](https://gist.github.com/benwoodward).
+
+<script src="https://gist.github.com/1521316.js?file=rbenv-install-system-wide.sh"></script>
