@@ -7,21 +7,16 @@ body {
   background: #f2f2f2; }
 
 a {
-  text-decoration: none;
-  -webkit-transition: color 0.5s ease-in-out;
-  -moz-transition: color 0.5s ease-in-out;
-  -o-transition: color 0.5s ease-in-out;
-  -ms-transition: color 0.5s ease-in-out;
-  transition: color 0.5s ease-in-out; }
+  text-decoration: none; }
   a:link {
-    color: #551a8b; }
+    color: #6d9cbe; }
   a:visited {
-    color: #551a8b; }
+    color: #6d9cbe; }
   a:hover {
     text-decoration: underline;
     color: #250a5b; }
   a:active {
-    color: #551a8b; }
+    color: #6d9cbe; }
 
 .clear {
   clear: both; }
@@ -44,7 +39,7 @@ div#header {
   border-bottom: 3px solid #d9d9d9;
   padding-bottom: 0.3em; }
   div#header #logo {
-    margin-top: -0.3em;
+    margin-top: -0.4em;
     float: left;
     font-family: 'Patua One', Georgia, serif;
     font-size: 1.5em; }
@@ -90,7 +85,7 @@ div#content {
     div#content div.navigation a {
       color: rgba(85, 26, 139, 0.2); }
       div#content div.navigation a:hover {
-        color: #551a8b; }
+        color: #6d9cbe; }
     div#content div.navigation a.previous {
       float: left; }
     div#content div.navigation a.next {
@@ -100,7 +95,7 @@ div#content {
   div#content h1, div#content h2, div#content h3, div#content h4, div#content h5 {
     font-family: 'Patua One', Palatino, Georgia, serif;
     color: #000;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.16); }
+    /* text-shadow: 1px 1px 1px rgba(0,0,0, 0.16); */ }
   div#content img {
     max-width: 840px;
     -moz-border-radius: 5px;
