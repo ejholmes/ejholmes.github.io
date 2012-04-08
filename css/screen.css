@@ -127,6 +127,14 @@ div#content {
     font-size: 0.8em; }
   div#content .gist-highlight pre {
     color: #000; }
+  div#content .path {
+    color: #999;
+    display: block;
+    font-size: 0.9em;
+    margin-top: -0.7em;
+    margin-bottom: -1.3em;
+    margin-left: 1.4em;
+    font-family: monospace; }
   div#content article.detail {
     border-bottom: 3px solid #dadada;
     padding-bottom: 20px;
