@@ -14,7 +14,7 @@ applications, mainly when dealing with [mass assignment](http://guides.rubyonrai
 However, locking down mass assignment can be very inconvenient when dealing
 with admin interfaces where you need to allow certain users to mass assign
 attributes that a regular user shouldn't be able to do. Fortunately, there's
-any easy way to get past this by using Rails 3.1's [scoped mass assignment](http://launchware.com/articles/whats-new-in-edge-scoped-mass-assignment-in-rails-3-1)
+an easy way to get past this by using Rails 3.1's [scoped mass assignment](http://launchware.com/articles/whats-new-in-edge-scoped-mass-assignment-in-rails-3-1)
 
 ### Scoped Mass Assignment
 Scoped mass assignment allows you to assign a set of attributes to a certain
