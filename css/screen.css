@@ -144,7 +144,7 @@ div#content {
     font-size: 1.7em; }
   div#content article h2, div#content article h3, div#content article h4, div#content article h5 {
     margin: 1em 0 -0.3em 0;
-    border: 2px dashed #ccc;
+    border-bottom: 2px dashed #ccc;
     padding-bottom: 5px; }
   div#content article .meta {
     margin-top: 2em;
