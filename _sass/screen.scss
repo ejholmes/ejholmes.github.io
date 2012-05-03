@@ -203,6 +203,8 @@ div#content {
     }
     h2, h3, h4, h5 {
       margin: 1em 0 -0.3em 0;
+      border: 2px dashed #ccc;
+      padding-bottom: 5px;
     }
     .meta {
       margin-top: 2em;
