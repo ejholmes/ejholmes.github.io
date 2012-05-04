@@ -12,8 +12,7 @@ ruby versions. It's similar to [RVM](http://beginrescueend.com/) but doesn't req
 configuration files. Instead of using gemsets, the user is expected to make
 use of [bundler](http://gembundler.com/) to manage gem dependencies.
 
-Installation
-------------
+### Installation
 
 Install rbenv from GitHub:
 

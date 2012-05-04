@@ -10,7 +10,7 @@ tags:
 Here's a quick and dirty guide to get OAuth2 authentication working for Active
 Admin using the Salesforce strategy.
 
-## Instructions
+### Instructions
 Add the omniauth gem to your Gemfile and run `bundle install`.
 
 <span class="path">Gemfile</span>
