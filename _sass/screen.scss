@@ -67,34 +67,46 @@ div#container {
 }
 
 div#header {
+  margin-top: -1em;
   margin-bottom: 1em;
-  border-bottom: 3px solid #d9d9d9;
+  border-bottom: 3px solid transparent;
   padding-bottom: 0.3em;
+  height: 3em;
+  line-height: 3em;
+
+  &:hover {
+    border-color: #d9d9d9;
+
+    ul {
+      display: block;
+    }
+  }
 
   #logo {
-    margin-top: -0.4em;
     float: left;
     font-family: 'Patua One', Georgia, serif;
     font-size: 1.5em;
+    margin-top: 0.5em;
 
     a {
       color: rgba(255, 187, 0, 0.7);
-      /* text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.66); */
-      /* @include transition(color 0.5s ease-in-out); */
 
       &:hover {
         color: #fb0;
       }
     }
+    
     span {
       color: #999;
     }
   }
+
   ul {
     float: right;
-    display: block;
+    display: none;
     padding: 0;
     margin: 0;
+    margin-top: 1.0em;
     list-style: none;
 
     li {
@@ -112,12 +124,15 @@ div#content {
   & > h1 {
     margin: 0;
   }
+
   .right {
     float: right;
   }
+  
   .left {
     float: left;
   }
+
   div.navigation {
     margin-bottom: 10px;
     @include transition(color 0.1s ease-in-out);
@@ -129,21 +144,26 @@ div#content {
         color: $link-color;
       }
     }
+
     a.previous {
       float: left;
     }
+
     a.next {
       float: right;
     }
   }
+
   p, ul, ol {
     line-height: 1.4em;
   }
+
   h1, h2, h3, h4, h5 {
     font-family: 'Patua One', Palatino, Georgia, serif;
     color: #000;
     /* text-shadow: 1px 1px 1px rgba(0,0,0, 0.16); */
   }
+
   img {
     max-width: $width + 40px;
     @include border-radius(5px);
@@ -151,19 +171,24 @@ div#content {
     &.right {
       margin: 0 0 1em 1em;
     }
+
     &.left {
       margin: 0 1em 1em 0;
     }
+
     &.half {
       max-width: $width / 2;
     }
+
     &.two-thirds {
       max-width: $width * (2/3);
     }
   }
+
   code {
     font-size: 0.75em;
   }
+
   pre {
     background: #000;
     color: #fff;
@@ -173,15 +198,19 @@ div#content {
     overflow: auto;
     @include border-radius(10px);
   }
+
   pre code {
     display: inline-block;
   }
+
   .gist {
     font-size: 0.8em;
   }
+
   .gist-highlight pre {
     color: #000;
   }
+
   .path {
     color: #999;
     display: block;
@@ -191,21 +220,25 @@ div#content {
     margin-left: 1.4em;
     font-family: monospace;
   }
+
   article {
     &.detail {
       border-bottom: 3px solid #dadada;
       padding-bottom: 20px;
       margin-bottom: 40px;
     }
+
     h1.title {
       margin: 0;
       font-size: 1.7em;
     }
+
     h2, h3, h4, h5 {
       margin: 1em 0 -0.3em 0;
       border-bottom: 2px dashed #ccc;
       padding-bottom: 5px;
     }
+
     .meta {
       margin-top: 2em;
       font-size: 0.9em;
@@ -235,10 +268,12 @@ div#content {
   #error404 {
     margin-top: 100px;
     text-align: center;
+
     h1 {
       color: #900;
       width: 400px;
     }
+
     img {
       float: right;
       position: relative;

@@ -35,27 +35,33 @@ div#container {
   box-shadow: 0 1px 4px #999999; }
 
 div#header {
+  margin-top: -1em;
   margin-bottom: 1em;
-  border-bottom: 3px solid #d9d9d9;
-  padding-bottom: 0.3em; }
+  border-bottom: 3px solid transparent;
+  padding-bottom: 0.3em;
+  height: 3em;
+  line-height: 3em; }
+  div#header:hover {
+    border-color: #d9d9d9; }
+    div#header:hover ul {
+      display: block; }
   div#header #logo {
-    margin-top: -0.4em;
     float: left;
     font-family: 'Patua One', Georgia, serif;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    margin-top: 0.5em; }
     div#header #logo a {
-      color: rgba(255, 187, 0, 0.7);
-      /* text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.66); */
-      /* @include transition(color 0.5s ease-in-out); */ }
+      color: rgba(255, 187, 0, 0.7); }
       div#header #logo a:hover {
         color: #fb0; }
     div#header #logo span {
       color: #999; }
   div#header ul {
     float: right;
-    display: block;
+    display: none;
     padding: 0;
     margin: 0;
+    margin-top: 1.0em;
     list-style: none; }
     div#header ul li {
       display: block;
