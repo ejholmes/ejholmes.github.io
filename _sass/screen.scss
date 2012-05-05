@@ -283,6 +283,11 @@ div#content {
   }
 }
 
+.coderwall {
+  position: absolute;
+  right: -160px;
+}
+
 @media screen and (max-width: 920px) {
   div#container {
     padding: 0;
