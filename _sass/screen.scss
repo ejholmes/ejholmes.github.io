@@ -293,6 +293,10 @@ div#content {
   div#content {
     padding: 0 1em;
   }
+
+  div#content img {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-device-width: 480px) {

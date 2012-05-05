@@ -182,7 +182,10 @@ div#content {
 
   div#header,
   div#content {
-    padding: 0 1em; } }
+    padding: 0 1em; }
+
+  div#content img {
+    max-width: 100%; } }
 @media screen and (max-device-width: 480px) {
   div#container {
     padding: 10px;
