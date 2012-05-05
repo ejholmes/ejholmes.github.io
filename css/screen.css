@@ -175,6 +175,14 @@ div#content {
       top: -70px;
       margin-top: 20px; }
 
+@media screen and (max-width: 920px) {
+  div#container {
+    padding: 0;
+    width: 100%; }
+
+  div#header,
+  div#content {
+    padding: 0 1em; } }
 @media screen and (max-device-width: 480px) {
   div#container {
     padding: 10px;
