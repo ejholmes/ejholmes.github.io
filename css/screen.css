@@ -30,9 +30,8 @@ div#container {
   margin: 0 auto;
   position: relative;
   padding: 30px;
-  -webkit-box-shadow: 0 1px 4px #999999;
-  -moz-box-shadow: 0 1px 4px #999999;
-  box-shadow: 0 1px 4px #999999; }
+  border-right: 4px solid #eee;
+  border-left: 4px solid #eee; }
 
 div#header {
   margin-top: -1em;
