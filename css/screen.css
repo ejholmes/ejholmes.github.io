@@ -196,6 +196,7 @@ div#content {
 @media screen and (max-width: 920px) {
   div#container {
     padding: 0;
+    border: none;
     width: 100%; }
 
   div#header,
@@ -203,7 +204,10 @@ div#content {
     padding: 0 1em; }
 
   div#content img {
-    max-width: 100%; } }
+    max-width: 100%; }
+
+  .coderwall {
+    display: none; } }
 @media screen and (max-device-width: 480px) {
   div#container {
     padding: 10px;
