@@ -151,6 +151,21 @@ div#content {
     margin-top: 2em;
     font-size: 0.9em;
     color: #888; }
+  div#content article blockquote {
+    font-family: Georgia, sans-serif;
+    font-style: italic;
+    font-size: 0.95em;
+    color: #222;
+    text-shadow: 1px 1px #fff;
+    -webkit-font-smoothing: antialiased;
+    margin: 0 0 0 1em;
+    padding: 1em;
+    background: #f9f9f9;
+    border-left: 4px solid #ddd; }
+  div#content article blockquote p:first-child {
+    margin-top: 0; }
+  div#content article blockquote p:last-child {
+    margin-bottom: 0; }
   div#content .social {
     margin-top: 0.9em;
     float: right; }

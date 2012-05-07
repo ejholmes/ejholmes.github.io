@@ -245,6 +245,27 @@ div#content {
       font-size: 0.9em;
       color: #888;
     }
+
+    blockquote {
+      font-family: Georgia, sans-serif;
+      font-style: italic;
+      font-size: 0.95em;
+      color: #222;
+      text-shadow: 1px 1px #fff;
+      -webkit-font-smoothing: antialiased;
+      margin: 0 0 0 1em;
+      padding: 1em;
+      background: #f9f9f9;
+      border-left: 4px solid #ddd;
+    }
+
+    blockquote p:first-child {
+      margin-top: 0;
+    }
+    
+    blockquote p:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .social {
