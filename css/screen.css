@@ -144,7 +144,7 @@ div#content {
     -webkit-border-radius: 5px;
     border-radius: 5px; }
     div#content article h1.title a {
-      color: #e9f0f5;
+      color: #fff;
       text-shadow: 1px 1px #000; }
   div#content article h2, div#content article h3, div#content article h4, div#content article h5 {
     margin: 1em 0 -0.3em 0;

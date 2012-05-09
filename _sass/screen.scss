@@ -224,7 +224,7 @@ div#content {
       @include border-radius(5px);
 
       a {
-        color: lighten($link-color, 35%);
+        color: #fff;
         text-shadow: 1px 1px #000;
       }
     }
