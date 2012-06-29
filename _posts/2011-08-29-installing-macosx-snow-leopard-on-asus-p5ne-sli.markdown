@@ -33,7 +33,8 @@ tags: [OS X]
    * JMicron ATA
    * PCIRootUID=1 Fix
    * GraphicsEnabler=Yes
-17. DO NOT REBOOT! Install [AppleNForceATA.kext](http://www.mediafire.com/?ufxx5uq1qaxtrxw) to /Extras/Extensions
+17. DO NOT REBOOT! Install
+    [AppleNForceATA.kext](https://dl.dropbox.com/u/1906634/Kexts.zip) to /Extras/Extensions
 18. Run: sudo chown -R root:wheel /Extras/Extensions/*
 19. Now run /Applications/Kext Utility.app
 20. Reboot and enjoy OS X 10.6.8!
