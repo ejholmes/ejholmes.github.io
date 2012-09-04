@@ -57,7 +57,7 @@ devise_for :admin_users, devise_config
 
 Add a controller to handle the omniauth callback.
 
-<span class="path">app/controllers/admin_user/omniauth_callbacks_controller.rb</span>
+<span class="path">app/controllers/admin_users/omniauth_callbacks_controller.rb</span>
 {% highlight ruby %}
 class AdminUsers::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   def salesforce
