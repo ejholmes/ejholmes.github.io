@@ -27,6 +27,12 @@ complex problems easily.
 
 ### Notable Projects
 
+* **[Work.com](http://work.com)**
+
+  Developed the public facing website for Salesforce.com's newly aquired Work.com product.
+
+  _Built with Sinatra (Padrino), Responsive Web Design, and Deploy on Heroku_
+
 * **[Heroku Partner Directory](http://partners.heroku.com/)**
   
   Developed Heroku's new public facing website for the Heroku Partner Program. Worked closely 
@@ -73,4 +79,3 @@ complex problems easily.
   Worked on developing custom web solutions for clients of Jabico Enterprises using technologies
   such as PHP, MySQL, MSSQL, ASP, and Javascript in a Windows and Linux environment. Also
   provided technical support to customers of the sub-company Sasquatch Computer.
-
