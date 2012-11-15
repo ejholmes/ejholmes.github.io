@@ -31,7 +31,7 @@ complex problems easily.
 
   Developed the public facing website for Salesforce.com's newly aquired Work.com product.
 
-  _Built with Sinatra (Padrino), Responsive Web Design, and Deploy on Heroku_
+  _Built with Sinatra (Padrino), Responsive Web Design, and Deployed on Heroku_
 
 * **[Heroku Partner Directory](http://partners.heroku.com/)**
   
