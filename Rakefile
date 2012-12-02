@@ -1,3 +1,6 @@
+require 'httparty'
+require 'pathname'
+
 task :default => :start
 
 desc 'Start the jekyll server'
@@ -8,6 +11,23 @@ end
 desc 'Delete generated _site files'
 task :clean do
   system "rm -rf _site"
+end
+
+desc 'Update resume content'
+task 'resume:update' do
+  LOCATION = 'https://raw.github.com/gist/3156426/resume.md'
+  FILE = Pathname('./resume.md')
+
+  content = <<-CONTENT
+---
+layout: default
+---
+
+CONTENT
+  content << HTTParty.get(LOCATION)
+  File.open(FILE, 'w') do |file|
+    file.puts content
+  end
 end
 
 desc 'Create a new post'
