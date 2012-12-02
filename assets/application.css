@@ -1586,9 +1586,6 @@ body {
   #content > h1:first-child a {
     color: #250a5b; }
 
-.resume-page p:first-of-type {
-  text-align: center; }
-
 .coderwall {
   position: absolute;
   top: 10px;
