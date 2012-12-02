@@ -1,9 +1,13 @@
 source 'http://rubygems.org'
 
 gem 'rake'
-gem 'sass'
 gem 'httparty'
 gem 'rdiscount'
 gem 'RedCloth'
 gem 'jekyll'
-gem 'foreman'
+
+group :assets do
+  gem 'catapult'
+  gem 'uglifier'
+  gem 'yui-compressor'
+end
