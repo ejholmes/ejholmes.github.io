@@ -8,7 +8,8 @@ layout: default
 
 
 I'm a passionate full stack developer with extensive experience with both server side and
-client side MVC frameworks. My development stack of choice includes Git, Ruby on Rails, SASS, CoffeeScript, CSS3 and HTML5. I'm a firm believer in test driven development, continous 
+client side MVC frameworks. My development stack of choice includes Git, Ruby on Rails, SASS,
+CoffeeScript, CSS3 and HTML5. I'm a firm believer in test driven development, continous 
 integration and code review, and always strive to write beautiful and elegant code that solves
 complex problems easily.
 
@@ -20,10 +21,9 @@ complex problems easily.
 * 4+ years experience with Git and Github.
 * Extensive experience with Ruby development, including Ruby on Rails and Sinatra.
 * A firm believer in test and behavior driven development as well as continous integration.
-  Proficient with RSpec, Capybara and Jasmine.
+  Proficient with RSpec, Capybara and Jasmine/Mocha.
 * Very familiar with the Heroku platform.
-* Experience with EmberJs and Backbone.
-
+* Experience with Ember.js and Backbone.js.
 
 ### Notable Projects
 
@@ -37,9 +37,10 @@ complex problems easily.
   
   Developed Heroku's new public facing website for the Heroku Partner Program. Worked closely 
   with the team at Heroku, including [Todd Mathews](http://todd.heroku.com) to develop a
-  beautifully usable product to incentivise potential partners to apply.
+  beautifully usable product that allows users to discover potential service
+  partners.
   
-  _Built with Ruby on Rails, Databasedotcom, and Deployed on Heroku_
+  _Built with Ruby on Rails, Backbone.js, Redis, Databasedotcom, and Deployed on Heroku_
   
 * **[Monetate University](http://university.monetate.com)**
 
@@ -49,10 +50,21 @@ complex problems easily.
   answers to questions and post new documentation and instructional videos.
   
   _Built with Ruby on Rails, Deployed on Heroku_
- 
-* **[databasedotcom gem](https://github.com/heroku/databasedotcom)**
 
-  Maintainer on the open source databasedotcom gem for Ruby.
+### Open Source
+ 
+* **[restforce gem](https://github.com/ejholmes/restforce)**
+
+  A ruby client for the Salesforce.com REST API with a clean and elegant
+  api interface.
+
+* **[metaforce gem](https://github.com/ejholmes/metaforce)**
+
+  A ruby client for the Salesforce.com Metadata and Services APIs.
+
+* **[vagrant-heroku](https://github.com/ejholmes/vagrant-heroku)**
+
+  A [Vagrant](http://vagrantup.com/) basebox that mirrors the heroku Cedar stack.
   
   
 ### Work Experience
