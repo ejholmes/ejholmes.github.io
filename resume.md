@@ -1,8 +1,9 @@
 ---
 layout: default
+page: resume
 ---
 
-# **[Eric Holmes](mailto:eric@ejholmes.net)**
+# [Eric Holmes](mailto:eric@ejholmes.net)
 
 [Github](https://github.com/ejholmes) | [LinkedIn](http://www.linkedin.com/profile/view?id=143474716&trk=tab_pro) | [Blog](https://ejholmes.github.com)
 
