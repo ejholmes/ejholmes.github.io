@@ -1252,10 +1252,29 @@ body {
   background: white;
   padding: 25px 30px 30px 30px; }
 
-code {
+#content .right {
+  float: right; }
+#content .left {
+  float: left; }
+#content img {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  max-width: 800px; }
+  #content img.right {
+    margin: 0 0 1em 1em; }
+  #content img.left {
+    margin: 0 1em 1em 0; }
+  #content img.half {
+    max-width: 400px; }
+  #content img.two-thirds {
+    max-width: 533.33333px; }
+#content .meta {
+  margin-top: 2em;
+  font-size: 0.9em;
+  color: #888888; }
+#content code {
   font-size: 0.75em; }
-
-pre {
+#content pre {
   -webkit-border-radius: 10px;
   border-radius: 10px;
   background: black;
@@ -1264,17 +1283,13 @@ pre {
   padding: 0.5em 1em;
   white-space: pre;
   overflow: auto; }
-
-pre code {
+#content pre code {
   display: inline-block; }
-
-.gist {
+#content .gist {
   font-size: 0.8em; }
-
-.gist-highlight pre {
+#content .gist-highlight pre {
   color: black; }
-
-.path {
+#content .path {
   color: #999999;
   display: block;
   font-size: 0.9em;
@@ -1282,15 +1297,14 @@ pre code {
   margin-bottom: -1.3em;
   margin-left: 1.4em;
   font-family: monospace; }
+#content h1.title {
+  margin-top: 0;
+  padding: 0 40px;
+  text-align: center; }
+  #content h1.title a {
+    color: #250a5b; }
 
 .coderwall {
   position: absolute;
   top: 10px;
   right: -160px; }
-
-article h1.title {
-  margin-top: 0;
-  padding: 0 40px;
-  text-align: center; }
-  article h1.title a {
-    color: #250a5b; }
