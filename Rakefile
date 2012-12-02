@@ -3,13 +3,6 @@ Bundler.require :default, :assets
 require 'fileutils'
 require 'pathname'
 
-desc 'Compile assets and jekyll templates'
-task :compile => ['jekyll:compile', 'assets:precompile']
-
-task 'jekyll:compile' do
-  Jekyll::Site.new(Jekyll.configuration({})).process
-end
-
 namespace :assets do
   TARGET = './assets'
 
