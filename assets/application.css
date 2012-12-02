@@ -1557,7 +1557,7 @@ body {
   #content img.two-thirds {
     max-width: 533.33333px; }
 #content .meta {
-  margin: 0 2em;
+  margin: 2em 0;
   font-size: 0.9em;
   color: #888888; }
 #content code {
