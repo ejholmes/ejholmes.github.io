@@ -1,16 +1,43 @@
-require 'httparty'
+require 'bundler'
+Bundler.require :default, :assets
+require 'fileutils'
 require 'pathname'
 
-task :default => :start
+desc 'Compile assets and jekyll templates'
+task :compile => ['jekyll:compile', 'assets:precompile']
 
-desc 'Start the jekyll server'
-task :start do
-  system "foreman start"
+task 'jekyll:compile' do
+  Jekyll::Site.new(Jekyll.configuration({})).process
+end
+
+namespace :assets do
+  TARGET = './assets'
+
+  Catapult.environment.clear_paths
+  %w[javascripts stylesheets images fonts].each do |path|
+    Catapult.environment.append_path(Pathname("./_assets/#{path}"))
+  end
+  Catapult.environment.append_path("#{Gem::Specification.find_by_name('bourbon').gem_dir}/app/assets/stylesheets")
+
+  def catapult_cli(task)
+    cli = Catapult::CLI.new
+    cli.invoke task, [], target: TARGET
+  end
+
+  desc 'Compile javascripts and stylesheets'
+  task :precompile do
+    catapult_cli :build
+  end
+
+  desc 'Watch files for changes and compile them'
+  task :watch do
+    catapult_cli :watch
+  end
 end
 
 desc 'Delete generated _site files'
 task :clean do
-  system "rm -rf _site"
+  FileUtils.rm_rf Pathname('./_site')
 end
 
 desc 'Update resume content'

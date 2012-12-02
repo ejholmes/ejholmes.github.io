@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title> Salesforce OAuth2 authentication with Active Admin |  ejholmes.github.com</title>
+    <meta name="author" content="Eric Holmes" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="/assets/application.css" type="text/css" media="all" />
+
+    <link href="/atom.xml" rel="alternate" title="ejholmes.github.com" type="application/atom+xml" />
+
+    <meta name="google-site-verification" content="mb6iga_W1c5xmxH3VZvk1sj-nMemSQ2ZqykpBk7vD3w" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="page" class="container">
+        <div id="header" class="clearfix">
+            <a class="posts" href="/posts.html"><i class="icon-edit"></i> Posts</a>
+        </div>
+        <div id="content">
+            
+
+<article  class="detail" >
+    <h1 class="title"><a href="/2012/04/08/active-admin-with-omniauth.html">Salesforce OAuth2 authentication with Active Admin</a></h1>
+    
+        <p>Here's a quick and dirty guide to get OAuth2 authentication working for Active
+Admin using the Salesforce strategy.</p>
+
+<h3>Instructions</h3>
+
+<p>Add the omniauth gem to your Gemfile and run <code>bundle install</code>.</p>
+
+<p><span class="path">Gemfile</span></p>
+
+<p>Configure devise to use the Salesforce strategy for omniauth.</p>
+
+<p><span class="path">config/initializers/devise.rb</span></p>
+
+<p>Add <code>:omniauthable</code> to the <code>devise</code> call in the <code>AdminUser</code> model and add a
+class method for retrieving the admin user based on the oauth access token.</p>
+
+<p><span class="path">app/models/admin_user.rb</span></p>
+
+<p>Add an omniauth controller to the <code>devise_for</code> call in the routes file.</p>
+
+<p><span class="path">config/routes.rb</span></p>
+
+<p>Add a controller to handle the omniauth callback.</p>
+
+<p><span class="path">app/controllers/admin_users/omniauth_callbacks_controller.rb</span></p>
+
+<p>Override the Active Admin login page in your application and add a link to sign
+in using Salesforce.</p>
+
+<p><span class="path">app/views/active_admin/devise/sessions/new.html.erb</span></p>
+
+    
+    <div class="meta">Posted on <time>08 Apr 2012</time> in <span class="tags">Active Admin, Salesforce, Rails</span></div>
+</article>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'ejholmes'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </div>
+        <section class="coderwall" data-coderwall-username="ejholmes" data-coderwall-orientation="vertical"></section>
+    </div>
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-15555520-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<!-- Mixpanel -->
+<script type="text/javascript">(function(d,c){var a,b,g,e;a=d.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===d.location.protocol?"https:":"http:")+'//api.mixpanel.com/site_media/js/api/mixpanel.2.js';b=d.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b);c._i=[];c.init=function(a,d,f){var b=c;"undefined"!==typeof f?b=c[f]=[]:f="mixpanel";g="disable track track_links track_forms register register_once unregister identify name_tag set_config".split(" ");for(e=0;e<
+g.length;e++)(function(a){b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,0)))}})(g[e]);c._i.push([a,d,f])};window.mixpanel=c})(document,[]);
+mixpanel.init("5f9a122e25085cf0152ae5e5af773b27");</script>
+
+    <link href="http://coderwall.com/stylesheets/jquery.coderwall.css" media="all" rel="stylesheet" type="text/css">
+<script src="http://coderwall.com/javascripts/jquery.coderwall.js"></script>
+
+</body>
+</html>

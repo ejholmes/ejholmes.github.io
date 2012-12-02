@@ -1,0 +1,95 @@
+@import bourbon
+@import normalize
+@import clearfix
+@import ingrid
+@import font-awesome
+
+$primary_font: 'kepler-std', Georgia, Times, serif
+$width: 800px
+$link_color: #6d9cbe
+
+h1, h2, h3, h4, h5
+  font-weight: normal
+  line-height: 1.3em
+  color: #000
+
+a
+  text-decoration: none
+
+  &:link
+    color: $link_color
+  &:visited
+    color: $link_color
+  &:hover
+    text-decoration: underline
+    color: #250a5b
+  &:active
+    color: $link_color
+
+body
+  background: #f2f2f2
+  -webkit-font-smoothing: antialiased
+  font-family: $primary_font
+  font-size: 22px
+  line-height: 1.5em
+  color: #111
+
+.container
+  width: $width
+  margin: 0 auto
+
+#header
+  a.posts
+    font-size: 14px
+    text-transform: uppercase
+    float: right
+
+#page
+  +box-shadow(1px 0 0 0 #ccc, -1px 0 0 0 #dfdfdf)
+  position: relative
+  background: #fff
+  padding: 25px 30px 30px 30px
+
+code
+  font-size: 0.75em
+
+pre
+  +border-radius(10px)
+  background: #000
+  color: #fff
+  line-height: 1.3em
+  padding: 0.5em 1em
+  white-space: pre
+  overflow: auto
+
+pre code
+  display: inline-block
+
+.gist
+  font-size: 0.8em
+
+.gist-highlight pre
+  color: #000
+
+.path
+  color: #999
+  display: block
+  font-size: 0.9em
+  margin-top: -0.7em
+  margin-bottom: -1.3em
+  margin-left: 1.4em
+  font-family: monospace
+
+.coderwall
+  position: absolute
+  top: 10px
+  right: -160px
+
+article
+  h1.title
+    margin-top: 0
+    padding: 0 40px
+    text-align: center
+
+    a
+      color: #250A5B

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title> Installing Mac OS X Snow Leopard on ASUS P5N-E SLI |  ejholmes.github.com</title>
+    <meta name="author" content="Eric Holmes" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="/assets/application.css" type="text/css" media="all" />
+
+    <link href="/atom.xml" rel="alternate" title="ejholmes.github.com" type="application/atom+xml" />
+
+    <meta name="google-site-verification" content="mb6iga_W1c5xmxH3VZvk1sj-nMemSQ2ZqykpBk7vD3w" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="page" class="container">
+        <div id="header" class="clearfix">
+            <a class="posts" href="/posts.html"><i class="icon-edit"></i> Posts</a>
+        </div>
+        <div id="content">
+            
+
+<article  class="detail" >
+    <h1 class="title"><a href="/2011/08/29/installing-macosx-snow-leopard-on-asus-p5ne-sli.html">Installing Mac OS X Snow Leopard on ASUS P5N-E SLI</a></h1>
+    
+        <h3>Specs</h3>
+
+<ul>
+<li><a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16813131142">ASUS P5N-E SLI Motherboard</a></li>
+<li><a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16819115017">Intel Core 2 Quad Q6600</a></li>
+<li><a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16822136770">Western Digital Caviar Blue Hard Drive</a></li>
+<li>NVIDIA GT 240</li>
+<li><a href="http://www.amazon.com/gp/product/B00007IFED">TRENDnet USB Ethernet adapter</a></li>
+</ul>
+
+
+<h3>What you'll need</h3>
+
+<ul>
+<li><a href="http://store.apple.com/us/product/MC573Z/A">Snow Leopard</a></li>
+<li><a href="http://www.mediafire.com/?thd5nmo2oyn">Empire EFI</a></li>
+<li>IDE DVD Drive (SATA Drive's won't work, it will stall with "Still waiting for root device")</li>
+</ul>
+
+
+<h3>Instructions</h3>
+
+<ol>
+<li>Burn Empire EFI Legacy (iBoot may also work using this method)</li>
+<li>Boot Empire EFI</li>
+<li>Remove Empire EFI from the DVD Drive. Insert Snow Leopard and press F5</li>
+<li>Press Enter to boot the Snow Leopard Installer</li>
+<li>Partition and format the hard drive then install Snow Leopard as normal</li>
+<li>When the installation is complete, remove Snow Leopard and re-insert Empire EFI into the DVD Drive</li>
+<li>Boot Empire EFI again. Select Snow Leopard and press Enter</li>
+<li>Follow the <a href="http://tonymacx86.blogspot.com/2010/04/iboot-multibeast-install-mac-os-x-on.html">iBoot guide</a> to install 10.6.8 combo update</li>
+<li>During MultiBeast setup, select the following:
+
+<ul>
+<li>EasyBeast</li>
+<li>System Utilities</li>
+<li>FakeSMC</li>
+<li>IOUSBFamily Rollback</li>
+<li>JMicron ATA</li>
+<li>PCIRootUID=1 Fix</li>
+<li>GraphicsEnabler=Yes</li>
+</ul>
+</li>
+<li>DO NOT REBOOT! Install
+<a href="https://dl.dropbox.com/u/1906634/Kexts.zip">AppleNForceATA.kext</a> to /Extras/Extensions</li>
+<li>Run: sudo chown -R root:wheel /Extras/Extensions/*</li>
+<li>Now run /Applications/Kext Utility.app</li>
+<li>Reboot and enjoy OS X 10.6.8!</li>
+</ol>
+
+
+<p>You should now have working ethernet, and dual screen monitor support. I've yet to get my SATA DVD Drive to function.</p>
+
+    
+    <div class="meta">Posted on <time>29 Aug 2011</time> in <span class="tags">OS X</span></div>
+</article>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'ejholmes'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </div>
+        <section class="coderwall" data-coderwall-username="ejholmes" data-coderwall-orientation="vertical"></section>
+    </div>
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-15555520-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<!-- Mixpanel -->
+<script type="text/javascript">(function(d,c){var a,b,g,e;a=d.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===d.location.protocol?"https:":"http:")+'//api.mixpanel.com/site_media/js/api/mixpanel.2.js';b=d.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b);c._i=[];c.init=function(a,d,f){var b=c;"undefined"!==typeof f?b=c[f]=[]:f="mixpanel";g="disable track track_links track_forms register register_once unregister identify name_tag set_config".split(" ");for(e=0;e<
+g.length;e++)(function(a){b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,0)))}})(g[e]);c._i.push([a,d,f])};window.mixpanel=c})(document,[]);
+mixpanel.init("5f9a122e25085cf0152ae5e5af773b27");</script>
+
+    <link href="http://coderwall.com/stylesheets/jquery.coderwall.css" media="all" rel="stylesheet" type="text/css">
+<script src="http://coderwall.com/javascripts/jquery.coderwall.js"></script>
+
+</body>
+</html>
