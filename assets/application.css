@@ -1534,6 +1534,12 @@ body {
   background: white;
   padding: 25px 30px 30px 30px; }
 
+#content h1 {
+  margin-top: 0;
+  padding: 0 40px;
+  text-align: center; }
+  #content h1 a {
+    color: #250a5b; }
 #content .right {
   float: right; }
 #content .left {
@@ -1579,12 +1585,6 @@ body {
   margin-bottom: -1.3em;
   margin-left: 1.4em;
   font-family: monospace; }
-#content > h1:first-child {
-  margin-top: 0;
-  padding: 0 40px;
-  text-align: center; }
-  #content > h1:first-child a {
-    color: #250a5b; }
 
 .coderwall {
   position: absolute;
