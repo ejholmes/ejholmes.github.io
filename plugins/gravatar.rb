@@ -18,7 +18,7 @@ module Jekyll
 			gravatar_hash = Digest::MD5.hexdigest(email_address)
 
 			# compile the full Gravatar URL
-			image_src = "http://www.gravatar.com/avatar/#{gravatar_hash}"
+			image_src = "http://www.gravatar.com/avatar/#{gravatar_hash}?s=120"
 			# output the full Gravatar URL
 			image_src
 		end
