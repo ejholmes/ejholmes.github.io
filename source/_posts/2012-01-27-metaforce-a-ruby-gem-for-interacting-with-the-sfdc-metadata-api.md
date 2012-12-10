@@ -2,6 +2,7 @@
 layout: post
 title: Metaforce - A Ruby gem for interacting with the SFDC Metadata API
 date: 2012-01-27 15:15:36 -0800
+comments: true
 ---
 
 I'd like to introduce you to a little pet project I've been working on in my

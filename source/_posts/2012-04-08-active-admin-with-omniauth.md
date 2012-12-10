@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Salesforce OAuth2 authentication with Active Admin
+comments: true
 ---
 
 Here's a quick and dirty guide to get OAuth2 authentication working for Active

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Force.com syntax highlighting for VIM
-tags: [Force.com]
+comments: true
 ---
 
 I despise Eclipse and the Force.com IDE; it's an extremely bloated piece of software. Thanks to [Eclim](http://eclim.org/), it's possible to take advantage of the good parts of Eclipse but use VIM to edit apex classes, visualforce pages, etc.

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How to Install rbenv on OS X
+comments: true
 ---
 
 [rbenv](https://github.com/sstephenson/rbenv) is a tool for managing

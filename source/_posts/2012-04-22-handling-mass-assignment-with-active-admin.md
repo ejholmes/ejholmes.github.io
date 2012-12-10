@@ -1,10 +1,7 @@
 ---
 layout: post
 title: Handling mass assignment with Active Admin
-tags:
-    - Rails
-    - Ruby
-    - Active Admin
+comments: true
 ---
 
 With the recent [Github security vulnerability](https://github.com/blog/1068-public-key-security-vulnerability-and-mitigation),
