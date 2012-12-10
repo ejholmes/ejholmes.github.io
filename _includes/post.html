@@ -1,7 +1,0 @@
-<h1 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
-{% if content %}
-    {{ content }}
-{% else %}
-    {{ post.content }}
-{% endif %}
-<div class="meta">Posted on <time>{{ post.date | date_to_string }}</time> in <span class="tags">{{ post.tags | join:', ' }}</span></div>
