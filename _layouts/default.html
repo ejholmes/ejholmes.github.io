@@ -6,8 +6,13 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 
+        <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,400italic' rel='stylesheet' type='text/css'>
+
         <!-- syntax highlighting CSS -->
         <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- reset CSS -->
+        <link rel="stylesheet" href="/css/normalize.css">
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/main.css">
@@ -15,29 +20,27 @@
     </head>
     <body>
 
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+        <div class="container">
+          <div class="content">
+            {{ content }}
           </div>
 
-          {{ content }}
-
-          <div class="footer">
-            <div class="contact">
+          <footer class="footer">
+            <section class="footer__contact contact">
               <p>
                 Eric Holmes<br />
                 Maker of things<br />
                 eric@ejholmes.io
               </p>
-            </div>
-            <div class="contact">
+            </section>
+            <section class="footer__social social">
               <p>
                 <a href="https://github.com/ejholmes">github.com/ejholmes</a><br />
                 <a href="https://twitter.com/vesirin">twitter.com/vesirin</a><br />
               </p>
-            </div>
+            </section>
           </div>
-        </div>
+        </footer>
 
     </body>
 </html>
