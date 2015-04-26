@@ -4,10 +4,10 @@ title: Salesforce OAuth2 authentication with Active Admin
 comments: true
 ---
 
-Here's a quick and dirty guide to get OAuth2 authentication working for Active
-Admin using the Salesforce strategy.
+Here's a quick and dirty guide to get OAuth2 authentication working for Active Admin using the Salesforce strategy.
 
 ### Instructions
+
 Add the omniauth gem to your Gemfile and run `bundle install`.
 
 ```ruby
@@ -25,8 +25,7 @@ require 'omniauth-salesforce'
 config.omniauth :salesforce, ENV["SFDC_CLIENT_ID"], ENV["SFDC_CLIENT_SECRET"]
 ```
 
-Add `:omniauthable` to the `devise` call in the `AdminUser` model and add a
-class method for retrieving the admin user based on the oauth access token.
+Add `:omniauthable` to the `devise` call in the `AdminUser` model and add a class method for retrieving the admin user based on the oauth access token.
 
 ```ruby
 # app/models/admin_user.rb
@@ -80,8 +79,7 @@ class AdminUsers::OmniauthCallbacksController < Devise::OmniauthCallbacksControl
 end
 ```
 
-Override the Active Admin login page in your application and add a link to sign
-in using Salesforce.
+Override the Active Admin login page in your application and add a link to sign in using Salesforce.
 
 ```erb
 # app/views/active_admin/devise/sessions/new.html.erb

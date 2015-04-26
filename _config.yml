@@ -1,4 +1,6 @@
 name: Eric Holmes
-markdown: redcarpet
-pygments: true
+markdown: kramdown
 permalink: /:year/:month/:day/:title.html
+kramdown:
+  input: GFM
+  enable_coderay: false
