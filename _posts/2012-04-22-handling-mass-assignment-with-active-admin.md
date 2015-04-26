@@ -8,7 +8,7 @@ With the recent [Github security vulnerability](https://github.com/blog/1068-pub
 
 However, locking down mass assignment can be very inconvenient when dealing with admin interfaces where you need to allow certain users to mass assign attributes that a regular user shouldn't be able to do. Fortunately, there's an easy way to get past this by using Rails 3.1's [scoped mass assignment](http://launchware.com/articles/whats-new-in-edge-scoped-mass-assignment-in-rails-3-1)
 
-### Scoped Mass Assignment
+## Scoped Mass Assignment
 
 Scoped mass assignment allows you to assign a set of attributes to a certain 'scope' that you can then specify when calling `create` or `update_attributes`.  Essentially, it allows you to do something like this:
 
@@ -35,7 +35,7 @@ end
 
 The above code will only allow the `published` attribute to be mass assigned if the current user is an admin.
 
-### Scoped Mass Assignment with Active Admin
+## Scoped Mass Assignment with Active Admin
 
 Scoped mass assignment works fine when we're writing the controllers ourselves, but how do we assign a scope when using active admin, where controllers are automatically created for us? Well, fortunately, active admin makes use of [inherited_resources](https://github.com/josevalim/inherited_resources), which provides a class method called `with_role`.
 
@@ -79,7 +79,7 @@ class Post < ActiveRecord::Base
 end
 ```
 
-### Related Resources
+## Related Resources
 
 * [Railscasts: #237 Dynamic attr_accessible](http://railscasts.com/episodes/237-dynamic-attr-accessible)
 * [Rails 3.1 scoped mass assignment](http://launchware.com/articles/whats-new-in-edge-scoped-mass-assignment-in-rails-3-1)
