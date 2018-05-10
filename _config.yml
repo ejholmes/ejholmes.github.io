@@ -1,4 +1,2 @@
 name: Eric Holmes
 permalink: /:year/:month/:day/:title.html
-markdown: redcarpet
-highlighter: pygments
