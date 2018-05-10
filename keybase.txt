@@ -1,0 +1,74 @@
+==================================================================
+https://keybase.io/ejholmes
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://ejholmes.github.io
+  * I am ejholmes (https://keybase.io/ejholmes) on keybase.
+  * I have a public key with fingerprint A8C6 B8A3 97E9 C5A0 5D7E  57A4 1D75 1DA4 B327 1752
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "010184573019dae978240b62308e84a0863a5ec3dff5e15df3fe428c84e9c3bcd16e0a",
+      "fingerprint": "a8c6b8a397e9c5a05d7e57a41d751da4b3271752",
+      "host": "keybase.io",
+      "key_id": "1d751da4b3271752",
+      "kid": "010184573019dae978240b62308e84a0863a5ec3dff5e15df3fe428c84e9c3bcd16e0a",
+      "uid": "077cfc57cd4f76249f6188c0dcd68719",
+      "username": "ejholmes"
+    },
+    "service": {
+      "hostname": "ejholmes.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1525935077,
+  "expire_in": 157680000,
+  "prev": "1e4eaab680a0d20bc5fd7c3e9e25fece1f16e2871e26c7a5a2d8f087b8afad85",
+  "seqno": 55,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.77
+Comment: https://keybase.io/crypto
+
+yMM+AnicrVJ/UBRVHOcCgeNI6NTSCnA2HbiRwf31dvdOBotpyNOZPHEihpDr7e7b
+YwNuj9s9DPkVHBjJUAOJOqBAiFoGE2Upjch0ZDFao3k1jKNORgz9Ii0jisKsXa1/
+mv7s/fPmfd/n83mfz/d9T98dGRFnSgok9R9LvS/X9FGoOxBRMDszXYXxiliJOaqw
+EnR7Q6UiUjV3iSxiDgwncIKjAUvhhF2EyM5yJI3zDEnhHOJoiHMMBQESKFGSACKA
+KFESoklO4GhkFyheEAkG4RBLxyTZ60F+n1/2aros5ASG5yBlZ3UYgDgQWQRYSBMi
+CwgR0jxFsgQLSJ1YrKgGQzfHQxVlyIpe0w/u2/b+A/8/+w7ckWNZQRIAK4i0xDIk
+bZcYguMEXBREhmMJuwFUkd8Ly5CORs8UK6VlSMVq0jG9WiELyGiskeRfiAyPrBUH
++DupfH5FUwSlVL8v1jSf6jD4WqXPIGxHvPtvKTcve0W9mzqjAvlVWfFiDkJHCpps
+aBOABHYK6I7TMfSsT/Yjt2wgAMtwuL6Md1CF0TtEIwh5vQpxkcR5AUgiK1DIjkgg
+IQERkt4DUk+HSEZgIYCkyEk4x+r/JkGRA5gRrtyrYA4AdJ/Qo2uqsscLtYAfYTVj
+ocKoCFNcRPSiu4wxi4gzJ/4zfLHOhJvmzN6OT2wPxyfY0qwfHLBGxzz2eMC2CPs5
+Xmju9A7Cgai1fUffJk/sap54vq62IZTVRiwPne1an0jdzAPD3QetYadtcDA1+Nv8
+3LJl9Uyfa9NrhfkE1ZFZn3OmIfdsfufqyJY1k/NPfzvEKnDg1cPiuk9/DNa/sGRP
+dpp2vXA44cSOrvhTrW81Ntk2jL636vybodiLxYvHN1xY2rg025mtZZUjjyu8992a
+w+XvTBV0zRaZr6c5kizBz76St7RsvNr60uyW1ec+z9RaVee+hPi257qKKuQbI00z
+WZuT5VF1MrcsaOVlX/vrRXndR16x9FZOmSx125tiH7xm8WRnyCUrdptjO5J3PNCT
+HGYilcInLbmHFrtW/fp7q9v8RLP1l/dDs8DvE+hrP8S9/GKZq786Bq+YHnIcW+BO
+vnH/GTkaXan2+i7P7Lw12hmTw9TiLd/sdyt/rmlyTo50fYceajuwfNs+6XRmkIqi
+i/7oMAXzU7Qj3EJ1bPuuq3OuyYMpdWvjGy6GJ09S0+2pZSnd06AnlBd9vG7P+L37
+d1+eqFpZNVIrySu/X4F2FqWnPfrhI5u20ff03EhsFkzYxFDvqePrxUvW0ey+K+fn
+vHunBgr6vmy9tDCeE84z9d/6IiZt3RI1a6OUc+HQ0NYx53Cc5ePGp9qPbp3fPHgO
+1jE/Cb0NY2Kq+eu/AEKLtYM=
+=6jbo
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ejholmes
+
+==================================================================
