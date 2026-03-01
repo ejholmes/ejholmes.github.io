@@ -59,7 +59,9 @@ Beyond the design philosophy, MCP has real day-to-day friction:
 
 ## So when does MCP make sense?
 
-I'm not saying MCP is completely useless. If a tool genuinely has no CLI equivalent, or if you need stateful multi-turn interactions with a service, MCP might be the right call.
+I'm not saying MCP is completely useless. If a tool genuinely has no CLI equivalent, or if you need stateful multi-turn interactions with a service, MCP might be the right call. I still use plenty in my day-to-day, when it's the only option.
+
+I might even argue there's some value in having a standardized interface, and that there are probably usecases where it makes more sense than a CLI.
 
 But for the vast majority of work, the CLI is simpler, faster to debug, and more reliable.
 
