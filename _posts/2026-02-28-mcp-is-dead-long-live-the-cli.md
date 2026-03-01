@@ -67,7 +67,7 @@ But for the vast majority of work—querying Jira, reading docs, managing infras
 
 The best tools are the ones that work for both humans and machines. CLIs have had decades of design iteration. They're composable, debuggable, and they piggyback on auth systems that already exist.
 
-MCP tried to build a better abstraction. But sometimes the old one was already pretty damn good.
+MCP tried to build a better abstraction. But it turns out we already had a pretty good one.
 
 ## A plea to builders
 
