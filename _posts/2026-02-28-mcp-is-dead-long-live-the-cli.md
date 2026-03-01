@@ -5,11 +5,9 @@ title: MCP is dead. Long live the CLI
 
 I'm going to make a bold claim; MCP is already in its death throes. We may not fully realize it yet, but the signs are there. OpenClaw doesn't support it, Pi doesn't support it. And for good reason.
 
-When Anthropic announced the Model Context Protocol, the industry collectively lost its mind. Every company scrambled to ship MCP servers as proof they were "AI first." Massive resources were poured into building new endpoints, new wire formats, new authorization schemes—all so LLMs could talk to services they could already talk to.
+When Anthropic announced the Model Context Protocol, the industry collectively lost its mind. Every company scrambled to ship MCP servers as proof they were "AI first." Massive resources poured into new endpoints, new wire formats, new authorization schemes—all so LLMs could talk to services they could already talk to.
 
-I'll admit—I never fully understood the need for it. Why do we need new endpoints, new wire formats, new authorization schemes for LLMs? You know what LLMs are really good at? Figuring things out on their own.
-
-Why? Because MCP solves a problem that doesn't really exist.
+I'll admit—I never fully understood the need for it. You know what LLMs are really good at? Figuring things out on their own. Give them a CLI and some docs and they're off to the races. MCP solves a problem that doesn't really exist.
 
 ## LLMs don't need a special protocol
 
