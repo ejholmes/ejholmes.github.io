@@ -68,3 +68,7 @@ But for the vast majority of work—querying Jira, reading docs, managing infras
 The best tools are the ones that work for both humans and machines. CLIs have had decades of design iteration. They're composable, debuggable, and they piggyback on auth systems that already exist.
 
 MCP tried to build a better abstraction. But sometimes the old one was already pretty damn good.
+
+## A plea to builders
+
+If you're a company investing in an MCP server but you don't have an official CLI—stop and rethink what you're doing. You're building the adapter before the tool. Ship a CLI that humans love using, and the LLMs will figure it out. I promise.
