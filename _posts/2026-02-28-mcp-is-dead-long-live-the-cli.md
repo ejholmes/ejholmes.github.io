@@ -7,7 +7,7 @@ I'm going to make a bold claim; MCP is already in its death throes. We may not f
 
 When Anthropic announced the Model Context Protocol, the industry collectively lost its mind. Every company scrambled to ship MCP servers as proof they were "AI first." Massive resources were poured into building new endpoints, new wire formats, new authorization schemes—all so LLMs could talk to services they could already talk to.
 
-I bought in too. I integrated MCP servers into my Claude Code workflow for Jira, Confluence, Datadog, and more. Six months later, I've ripped most of them out and gone back to CLI tools.
+I'll admit—I never fully understood the need for it. Why do we need new endpoints, new wire formats, new authorization schemes for LLMs? You know what LLMs are really good at? Figuring things out on their own.
 
 Why? Because MCP solves a problem that doesn't really exist.
 
