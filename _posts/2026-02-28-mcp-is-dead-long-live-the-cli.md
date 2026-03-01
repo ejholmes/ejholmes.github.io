@@ -15,7 +15,7 @@ MCP provides no real world benefit. Let me explain.
 
 Here's the thing: LLMs are *really good* at using command-line tools. They've been trained on millions of man pages, Stack Overflow answers, and GitHub repos full of shell scripts. When I tell Claude to use `gh pr view 123`, it just works.
 
-MCP promised a cleaner interface, but in practice I found myself writing the same documentation anyway—what each tool does, what parameters it accepts, when to use it. The LLM didn't need a new protocol. It needed a good `--help` flag.
+MCP promised a cleaner interface, but in practice I found myself writing the same documentation anyway—what each tool does, what parameters it accepts, and more importantly, when to use it. The LLM didn't need a new protocol.
 
 ## CLIs are for humans too
 
@@ -23,7 +23,7 @@ When Claude does something unexpected with Jira, I can run the same `jira issue 
 
 With MCP, the tool only exists inside the LLM conversation. Something goes wrong and now I'm spelunking through JSON transport logs instead of just running the command myself. Debugging shouldn't require a protocol decoder.
 
-## Composability is the killer feature
+## Composability
 
 This is where the gap gets wide. CLIs compose. I can pipe through `jq`, chain with `grep`, redirect to files. This isn't just convenient—it's often the only practical approach.
 
@@ -43,7 +43,7 @@ CLI tools don't care. `aws` uses profiles and SSO. `gh` uses `gh auth login`. `k
 
 ## No moving parts
 
-MCP servers are processes. They need to start up, stay running, and not silently hang. In Claude Code, they're spawned as child processes, which works until it doesn't.
+Local MCP servers are processes. They need to start up, stay running, and not silently hang. In Claude Code, they're spawned as child processes, which works until it doesn't.
 
 CLI tools are just binaries on disk. No background processes, no state to manage, no initialization dance. They're there when you need them and invisible when you don't.
 
@@ -53,7 +53,7 @@ Beyond the design philosophy, MCP has real day-to-day friction:
 
 **Initialization is flaky.** I've lost count of the times I've restarted Claude Code because an MCP server didn't come up. Sometimes it works on retry, sometimes I'm clearing state and starting over.
 
-**Re-auth never ends.** OAuth tokens expire. MCP servers need to be re-authenticated constantly. CLIs with SSO or long-lived credentials just don't have this problem.
+**Re-auth never ends.** Using multiple tools with MCP’s? Have fun authenticating each one. CLIs with SSO or long-lived credentials just don't have this problem. Auth once and you’re done.
 
 **Permissions are all-or-nothing.** Claude Code lets you allowlist MCP tools by name, but that's it. You can't scope to read-only operations or restrict parameters. With CLIs, I can allowlist `gh pr view` but require approval for `gh pr merge`. That granularity matters.
 
