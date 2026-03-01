@@ -1,2 +1,5 @@
 name: Eric Holmes
 permalink: /:year/:month/:day/:title.html
+
+plugins:
+  - jekyll-gist
