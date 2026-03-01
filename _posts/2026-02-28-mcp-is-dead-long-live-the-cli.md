@@ -9,7 +9,7 @@ When Anthropic announced the Model Context Protocol, the industry collectively l
 
 I'll admit—I never fully understood the need for it. You know what LLMs are really good at? Figuring things out on their own. Give them a CLI and some docs and they're off to the races.
 
-MCP provides no real world benefit. Let me explain.
+I'm fully convinced that MCP provides no real world benefit, and that we'd be better off without. Let me explain.
 
 ## LLMs don't need a special protocol
 
