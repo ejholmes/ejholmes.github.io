@@ -33,7 +33,7 @@ Consider analyzing a large Terraform plan:
 terraform show -json plan.out | jq '[.resource_changes[] | select(.change.actions[0] == "no-op" | not)] | length'
 ```
 
-With MCP, your options are dumping the entire plan into the context window (expensive, often impossible) or building custom filtering into the MCP server itself. Either way, you're doing more work for a worse result. The CLI approach uses tools that already exist, are well-documented, and that both humans and LLMs understand.
+With MCP, your options are dumping the entire plan into the context window (expensive, often impossible) or building custom filtering into the MCP server itself. Either way, you're doing more work for a worse result. The CLI approach uses tools that already exist, are well-documented, and that both humans and agents understand.
 
 ## Auth already works
 
@@ -73,4 +73,4 @@ MCP tried to build a better abstraction. Turns out we already had a pretty good 
 
 ## A plea to builders
 
-If you're a company investing in an MCP server but you don't have an official CLI, stop and rethink what you're doing. Ship a good API, then ship a good CLI. The LLMs will figure it out.
+If you're a company investing in an MCP server but you don't have an official CLI, stop and rethink what you're doing. Ship a good API, then ship a good CLI. The agents will figure it out.
