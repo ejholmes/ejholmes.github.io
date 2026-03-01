@@ -71,4 +71,4 @@ MCP tried to build a better abstraction. But sometimes the old one was already p
 
 ## A plea to builders
 
-If you're a company investing in an MCP server but you don't have an official CLI—stop and rethink what you're doing. You're building the adapter before the tool. Ship a CLI that humans love using, and the LLMs will figure it out. I promise.
+If you're a company investing in an MCP server but you don't have an official CLI—stop and rethink what you're doing. You're building the adapter before the tool. Ship a good API, then ship a good CLI. The LLMs will figure it out. I promise.
