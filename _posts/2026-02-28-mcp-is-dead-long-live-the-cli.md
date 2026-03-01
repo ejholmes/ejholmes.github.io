@@ -35,7 +35,7 @@ terraform show -json plan.out | jq '[.resource_changes[] | select(.change.action
 
 With MCP, your options are dumping the entire plan into the context window (expensive, often impossible) or building custom filtering into the MCP server itself. Either way, you're doing more work to get a worse result. The CLI approach leverages tools that already exist, are well-documented, and that both humans and LLMs can use.
 
-## Auth is your problem (in a good way)
+## Auth already works
 
 MCP servers each handle auth their own way. Some use OAuth, some use API keys, some use... creative approaches. Every server has its own token refresh logic and its own way of failing when credentials expire.
 
