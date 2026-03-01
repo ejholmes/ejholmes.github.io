@@ -3,19 +3,19 @@ layout: post
 title: MCP is dead. Long live the CLI
 ---
 
-I'm going to make a bold claim; MCP is already in its death throes. We may not fully realize it yet, but the signs are there. OpenClaw doesn't support it, Pi doesn't support it. And for good reason.
+I'm going to make a bold claim: MCP is already dying. We may not fully realize it yet, but the signs are there. OpenClaw doesn't support it. Pi doesn't support it. And for good reason.
 
-When Anthropic announced the Model Context Protocol, the industry collectively lost its mind. Every company scrambled to ship MCP servers as proof they were "AI first." Massive resources poured into new endpoints, new wire formats, new authorization schemes—all so LLMs could talk to services they could already talk to.
+When Anthropic announced the Model Context Protocol, the industry collectively lost its mind. Every company scrambled to ship MCP servers as proof they were "AI first." Massive resources poured into new endpoints, new wire formats, new authorization schemes, all so LLMs could talk to services they could already talk to.
 
-I'll admit—I never fully understood the need for it. You know what LLMs are really good at? Figuring things out on their own. Give them a CLI and some docs and they're off to the races.
+I'll admit, I never fully understood the need for it. You know what LLMs are really good at? Figuring things out on their own. Give them a CLI and some docs and they're off to the races.
 
-I'm fully convinced that MCP provides no real world benefit, and that we'd be better off without. Let me explain.
+I'm convinced MCP provides no real-world benefit, and that we'd be better off without it. Let me explain.
 
 ## LLMs don't need a special protocol
 
-Here's the thing: LLMs are *really good* at using command-line tools. They've been trained on millions of man pages, Stack Overflow answers, and GitHub repos full of shell scripts. When I tell Claude to use `gh pr view 123`, it just works.
+LLMs are really good at using command-line tools. They've been trained on millions of man pages, Stack Overflow answers, and GitHub repos full of shell scripts. When I tell Claude to use `gh pr view 123`, it just works.
 
-MCP promised a cleaner interface, but in practice I found myself writing the same documentation anyway—what each tool does, what parameters it accepts, and more importantly, when to use it. The LLM didn't need a new protocol.
+MCP promised a cleaner interface, but in practice I found myself writing the same documentation anyway: what each tool does, what parameters it accepts, and more importantly, when to use it. The LLM didn't need a new protocol.
 
 ## CLIs are for humans too
 
@@ -25,7 +25,7 @@ With MCP, the tool only exists inside the LLM conversation. Something goes wrong
 
 ## Composability
 
-This is where the gap gets wide. CLIs compose. I can pipe through `jq`, chain with `grep`, redirect to files. This isn't just convenient—it's often the only practical approach.
+This is where the gap gets wide. CLIs compose. I can pipe through `jq`, chain with `grep`, redirect to files. This isn't just convenient; it's often the only practical approach.
 
 Consider analyzing a large Terraform plan:
 
@@ -33,13 +33,13 @@ Consider analyzing a large Terraform plan:
 terraform show -json plan.out | jq '[.resource_changes[] | select(.change.actions[0] == "no-op" | not)] | length'
 ```
 
-With MCP, your options are dumping the entire plan into the context window (expensive, often impossible) or building custom filtering into the MCP server itself. Either way, you're doing more work to get a worse result. The CLI approach leverages tools that already exist, are well-documented, and that both humans and LLMs can use.
+With MCP, your options are dumping the entire plan into the context window (expensive, often impossible) or building custom filtering into the MCP server itself. Either way, you're doing more work for a worse result. The CLI approach uses tools that already exist, are well-documented, and that both humans and LLMs understand.
 
 ## Auth already works
 
 MCP servers each handle auth their own way. Some use OAuth, some use API keys, some use... creative approaches. Every server has its own token refresh logic and its own way of failing when credentials expire.
 
-CLI tools don't care. `aws` uses profiles and SSO. `gh` uses `gh auth login`. `kubectl` uses kubeconfig. These are battle-tested auth flows that work identically whether I'm at the keyboard or Claude is driving. When auth breaks, I fix it the way I always would—`aws sso login`, `gh auth refresh`—no MCP-specific troubleshooting required.
+CLI tools don't care. `aws` uses profiles and SSO. `gh` uses `gh auth login`. `kubectl` uses kubeconfig. These are battle-tested auth flows that work the same whether I'm at the keyboard or Claude is driving. When auth breaks, I fix it the way I always would: `aws sso login`, `gh auth refresh`. No MCP-specific troubleshooting required.
 
 ## No moving parts
 
@@ -53,7 +53,7 @@ Beyond the design philosophy, MCP has real day-to-day friction:
 
 **Initialization is flaky.** I've lost count of the times I've restarted Claude Code because an MCP server didn't come up. Sometimes it works on retry, sometimes I'm clearing state and starting over.
 
-**Re-auth never ends.** Using multiple tools with MCP’s? Have fun authenticating each one. CLIs with SSO or long-lived credentials just don't have this problem. Auth once and you’re done.
+**Re-auth never ends.** Using multiple MCP tools? Have fun authenticating each one. CLIs with SSO or long-lived credentials just don't have this problem. Auth once and you're done.
 
 **Permissions are all-or-nothing.** Claude Code lets you allowlist MCP tools by name, but that's it. You can't scope to read-only operations or restrict parameters. With CLIs, I can allowlist `gh pr view` but require approval for `gh pr merge`. That granularity matters.
 
@@ -61,14 +61,14 @@ Beyond the design philosophy, MCP has real day-to-day friction:
 
 I'm not saying MCP is completely useless. If a tool genuinely has no CLI equivalent, or if you need stateful multi-turn interactions with a service, MCP might be the right call.
 
-But for the vast majority of work—querying Jira, reading docs, managing infrastructure, interacting with GitHub—the CLI is simpler, faster to debug, and more reliable.
+But for the vast majority of work, the CLI is simpler, faster to debug, and more reliable.
 
 ## The real lesson
 
 The best tools are the ones that work for both humans and machines. CLIs have had decades of design iteration. They're composable, debuggable, and they piggyback on auth systems that already exist.
 
-MCP tried to build a better abstraction. But it turns out we already had a pretty good one.
+MCP tried to build a better abstraction. Turns out we already had a pretty good one.
 
 ## A plea to builders
 
-If you're a company investing in an MCP server but you don't have an official CLI—stop and rethink what you're doing. You're building the adapter before the tool. Ship a good API, then ship a good CLI. The LLMs will figure it out. I promise.
+If you're a company investing in an MCP server but you don't have an official CLI, stop and rethink what you're doing. You're building the adapter before the tool. Ship a good API, then ship a good CLI. The LLMs will figure it out.
