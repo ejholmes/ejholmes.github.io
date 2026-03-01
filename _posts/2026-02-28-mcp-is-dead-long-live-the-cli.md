@@ -37,7 +37,7 @@ With MCP, your options are dumping the entire plan into the context window (expe
 
 ## Auth already works
 
-MCP servers each handle auth their own way. Some use OAuth, some use API keys, some use... creative approaches. Every server has its own token refresh logic and its own way of failing when credentials expire.
+MCP is unnecessarily opinionated about auth. Why should a protocol for giving an LLM tools to use need to concern itself with authentication?
 
 CLI tools don't care. `aws` uses profiles and SSO. `gh` uses `gh auth login`. `kubectl` uses kubeconfig. These are battle-tested auth flows that work the same whether I'm at the keyboard or Claude is driving. When auth breaks, I fix it the way I always would: `aws sso login`, `gh auth refresh`. No MCP-specific troubleshooting required.
 
