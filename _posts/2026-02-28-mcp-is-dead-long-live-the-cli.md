@@ -9,7 +9,7 @@ When Anthropic announced the Model Context Protocol, the industry collectively l
 
 I'll admit, I never fully understood the need for it. You know what LLMs are really good at? Figuring things out on their own. Give them a CLI and some docs and they're off to the races.
 
-I'm convinced MCP provides no real-world benefit, and that we'd be better off without it. Let me explain.
+I tried to avoid writing this for a long time, but I'm convinced MCP provides no real-world benefit, and that we'd be better off without it. Let me explain.
 
 ## LLMs don't need a special protocol
 
@@ -59,7 +59,7 @@ Beyond the design philosophy, MCP has real day-to-day friction:
 
 ## So when does MCP make sense?
 
-I'm not saying MCP is completely useless. If a tool genuinely has no CLI equivalent, or if you need stateful multi-turn interactions with a service, MCP might be the right call. I still use plenty in my day-to-day, when it's the only option.
+I'm not saying MCP is completely useless. If a tool genuinely has no CLI equivalent, MCP might be the right call. I still use plenty in my day-to-day, when it's the only option available.
 
 I might even argue there's some value in having a standardized interface, and that there are probably usecases where it makes more sense than a CLI.
 
