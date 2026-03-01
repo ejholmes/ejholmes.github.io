@@ -3,25 +3,15 @@ layout: post
 title: MCP is dead. Long live the CLI
 ---
 
-<!-- OUTLINE
+I’m going to make a bold statement: MCP is already in its death throes. We may not fully realize it yet, but the signs are there. OpenClaw doesn’t support it. Pi doesn’t support it. And for good reason.
 
-- LLM's understand how to use CLI's just fine
-- CLI's are usable by humans too
-- CLI's are composable with other tools (e.g. piping output to `jq`). Sometimes this is necessary for context preservation (e.g. trying to analyze large terraform plans or state files)
-  - Try running a "count" on some MCP output
-- CLI's are not opinionated about auth
-- CLI's require no additional infrastructure
-- CC has a bug where MCP don't always initialize
-- MCP's need to be re-authed constantly.
-- MCP's are really limited in how you can allowlist them in settings.json (can only allowlist the action, not specific parameters used).
+MCP was a way for companies to say “look, we’re AI first!” So they spun up massive amounts of resources to build something we didn’t actually need.
 
--->
+I admit—I never fully understood why we need it. Why do we need new endpoints, new wire formats, new authorization schemes for LLMs? You know what LLMs are really good at? Figuring things out on their own.
 
----
+You can claim there’s benefits around standardization, but at what cost?
 
-When Anthropic announced the Model Context Protocol, I was genuinely excited. A standard way for LLMs to interact with external tools and data sources? Sign me up. I integrated MCP servers into my Claude Code workflow for Jira, Confluence, Datadog, and more.
-
-Six months later, I've ripped most of them out. Here's why the humble CLI turned out to be the better abstraction.
+MCP provides no real world benefit. Let me explain.
 
 ## LLMs already understand CLIs
 
