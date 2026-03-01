@@ -6,50 +6,30 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 
-        <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic' rel='stylesheet' type='text/css'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/github-markdown.css">
-        <style>
-        .markdown-body {
-          min-width: 200px;
-          max-width: 790px;
-          margin: 0 auto;
-          padding: 30px;
-        }
-        .footer hr {
-          margin-top: 60px;
-        }
-        .footer__social {
-          float: right;
-        }
-        .footer__contact {
-          float: left;
-        }
-        .post__meta {
-          margin-bottom: 20px;
-        }
-        </style>
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/syntax.css">
     </head>
     <body>
 
-        <div class="container markdown-body">
-          <div class="content">
+        <div class="container">
+          <header class="site-header">
+            <a href="/" class="site-title">Eric Holmes</a>
+            <nav class="site-nav">
+              <a href="https://github.com/ejholmes">GitHub</a>
+              <a href="mailto:eric@ejholmes.io">Email</a>
+            </nav>
+          </header>
+
+          <main class="content">
             {{ content }}
-          </div>
-          <footer class="footer">
-            <hr />
-            <section class="footer__social social">
-              <p>
-              <a href="https://keybase.io/ejholmes">keybase.io/ejholmes</a><br />
-              </p>
-            </section>
-            <section class="footer__contact contact">
-              <p>
-                Eric Holmes<br />
-                eric@ejholmes.io
-              </p>
-            </section>
+          </main>
+
+          <footer class="site-footer">
+            <p>Eric Holmes &middot; Infrastructure Engineer</p>
           </footer>
         </div>
 
