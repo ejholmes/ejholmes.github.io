@@ -35,5 +35,24 @@
           </footer>
         </div>
 
+        <script>
+        // Add anchor links to headers
+        document.querySelectorAll('.post-content h2[id], .post-content h3[id], .post-content h4[id]').forEach(heading => {
+            const anchor = document.createElement('a');
+            anchor.href = '#' + heading.id;
+            anchor.className = 'header-anchor';
+            anchor.textContent = '#';
+            anchor.title = 'Copy link';
+            anchor.addEventListener('click', async (e) => {
+                e.preventDefault();
+                const url = window.location.href.split('#')[0] + '#' + heading.id;
+                await navigator.clipboard.writeText(url);
+                history.pushState(null, null, '#' + heading.id);
+                anchor.textContent = '✓';
+                setTimeout(() => anchor.textContent = '#', 1500);
+            });
+            heading.appendChild(anchor);
+        });
+        </script>
     </body>
 </html>

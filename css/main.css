@@ -86,6 +86,27 @@ h1 { font-size: 2rem; }
 h2 { font-size: 1.5rem; }
 h3 { font-size: 1.25rem; }
 
+/* Header anchor links */
+.header-anchor {
+    margin-left: 0.5em;
+    color: #ccc;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.15s ease, color 0.15s ease;
+}
+
+h2:hover .header-anchor,
+h3:hover .header-anchor,
+h4:hover .header-anchor,
+.header-anchor:focus {
+    opacity: 1;
+}
+
+.header-anchor:hover {
+    color: #2563eb;
+    text-decoration: none;
+}
+
 p {
     margin: 0 0 1.5em;
 }
