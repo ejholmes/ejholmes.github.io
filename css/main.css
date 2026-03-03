@@ -180,6 +180,13 @@ blockquote {
 
 .post-content {
     margin-bottom: 80px;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.post-content a {
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 /* Code */
