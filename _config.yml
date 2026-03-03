@@ -5,10 +5,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
 
-# Publish policy: explicitly allow required root files and exclude local/dev files.
-include:
-  - keybase.txt
-
+# Publish policy: exclude local/dev files from static output.
 exclude:
   - AGENTS.md
   - README.md
