@@ -12,7 +12,7 @@ Today, stacker manages 153 CloudFormation stacks that build out all of the AWS i
 
 Over the last couple of weeks, I took it upon myself to refactor the core issues in stacker that made implementing parallelism difficult, and dropped our total execution time from 10 minutes, to under 1.5 minutes. This work is now included in [stacker 1.2](https://github.com/remind101/stacker/releases/tag/1.2.0) so everyone can benefit.
 
-### Thinking in Graphs
+## Thinking in Graphs
 
 Before I dive into how we implemented parallelism in stacker, I think it's important to take a step back, and look at what stacker is, at it's core; a tool for linking infrastructure together as a dependency graph.
 
@@ -65,7 +65,7 @@ A subset of graphs, called [Directed Acyclic Graphs](https://en.wikipedia.org/wi
 
 There's a lot of ways that you can think about CloudFormation and stacker (and similar projects, like Terraform), but I like to think of it as a tool that can build a "static binary" for a distributed system, and allows you to specify every dependency of that system as a Directed Acyclic Graph (DAG).
 
-### On walking graphs
+## On walking graphs
 
 Once we understand that we're just working on a graph, it opens up opportunities to leverage Graph Theory research to improve performance.
 
@@ -99,7 +99,7 @@ In our trivial example, this only shaves off 5 seconds (25%), but in a mature in
 
 ![Wide dependency graph](/assets/images/building-infrastructure-in-parallel/wide-graph.png)
 
-### Implementing parallelism with job scheduling
+## Implementing parallelism with job scheduling
 
 With MIT's paper in hand (figuratively), we can implement a function that will walk the graph in O(N) time, where N is the critical chain, regardless of the total number of nodes in the graph.
 
