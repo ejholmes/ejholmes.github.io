@@ -4,3 +4,15 @@ permalink: /:year/:month/:day/:title.html
 plugins:
   - jekyll-gist
   - jekyll-feed
+
+# Publish policy: explicitly allow required root files and exclude local/dev files.
+include:
+  - keybase.txt
+
+exclude:
+  - AGENTS.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - devbox.json
+  - devbox.lock
