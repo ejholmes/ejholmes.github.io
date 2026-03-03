@@ -4,3 +4,12 @@ permalink: /:year/:month/:day/:title.html
 plugins:
   - jekyll-gist
   - jekyll-feed
+
+# Publish policy: exclude local/dev files from static output.
+exclude:
+  - AGENTS.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - devbox.json
+  - devbox.lock
