@@ -10,7 +10,7 @@ Since the recent [NPM](https://eslint.org/blog/2018/07/postmortem-for-malicious-
 
 On Jun 31st, I went in with the intention of seeing if I could gain access to Homebrew's GitHub repositories. About 30 minutes later, I made my first commit to [Homebrew/homebrew-core](https://api.github.com/repos/Homebrew/homebrew-core/git/blobs/30d74d258442c7c65512eafab474568dd706c430).
 
-#### Let's get leaky
+## Let's get leaky
 
 My initial strategy going in was based on credential theft; find if there were any credentials leaked by members of the Homebrew GitHub org.
 
@@ -81,7 +81,7 @@ $ curl https://api.github.com/repos/Homebrew/homebrew-core/git/blobs \
 
 And then subsequently reported the issue to the Homebrew maintainers.
 
-#### What this means
+## What this means
 
 Let me put this in perspective:
 
@@ -95,7 +95,7 @@ If I can gain access to commit in 30 minutes, what could a nation state with ded
 
 This is my growing concern, and it's been proven [time](https://eslint.org/blog/2018/07/postmortem-for-malicious-package-publishes) and [time](https://thehackernews.com/2018/07/github-hacking-gentoo-linux.html) [again](https://justi.cz/security/2017/10/07/rubygems-org-rce.html) that package managers, and credential leaks, are a weak point in the security of the internet, and that supply chain attacks are a [real and persistent threat](https://thehackernews.com/2018/04/ccleaner-malware-attack.html). This is not a weakness in Homebrew, but rather a systemic problem in the industry, and one where we need more security research.
 
-#### What's being done
+## What's being done
 
 Homebrew has publicly disclosed the issue on the blog at [https://brew.sh/2018/08/05/security-incident-disclosure/](https://brew.sh/2018/08/05/security-incident-disclosure/). The Homebrew team worked with GitHub to audit and ensure that the given access token wasn't used maliciously, and didn't make any unexpected commits to the core Homebrew repos. I want to give special thanks to Mike McQuaid for his quick and professional handling of my report while on his paternity leave.
 
