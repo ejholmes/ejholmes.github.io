@@ -2,6 +2,7 @@
 layout: post
 title: The Arduino Focuser
 comments: true
+excerpt: In case you've never heard of it, the Arduino is a tool for the design and development of embedded computer systems. This is where I decided to start my homemade ASCOM compliant computerized focuser.
 ---
 
 **UPDATE:** The Ardunio Focuser was just featured in the October issue of Astronomy Now magazine in the UK. Read about it on page 76-77!

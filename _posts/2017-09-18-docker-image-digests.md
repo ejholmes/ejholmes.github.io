@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Docker image digests
+excerpt: How confident are you that your infrastructure is running the Docker images that you expect to be running? If you deploy Docker images by tag, for example :latest, you shouldn't be.
 ---
 
 > This post was originally published on the [Remind Engineering Blog](https://engineering.remind.com/docker-image-digests/).

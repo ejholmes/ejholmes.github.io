@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Keeping AWS secrets secret with ECS
+excerpt: One of the most important aspects of our security strategy in the Operations Engineering Team is to mitigate the risk of leaked AWS credentials. Even if you follow AWS best practices of putting your infrastructure within a VPC, leaking AWS credentials provides keys to the castle.
 ---
 
 > This post was originally published on the [Remind Engineering Blog](https://engineering.remind.com/keeping-aws-secrets-secret-with-ecs/).

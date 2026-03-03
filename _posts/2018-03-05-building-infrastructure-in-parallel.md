@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Building Infrastructure in Parallel
+excerpt: In the early days of stacker at Remind, the number of stacks that we were managing was just a handful. CloudFormation stacks were updated sequentially, without any parallelism, and everyone was happy.
 ---
 
 > This post was originally published on the [Remind Engineering Blog](https://engineering.remind.com/building-infrastructure-in-parallel/).

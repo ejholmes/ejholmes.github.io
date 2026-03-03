@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "How I gained commit access to Homebrew in 30 minutes"
+excerpt: Since the recent NPM, RubyGems, and Gentoo incidents, I've become increasingly interested in the potential for package managers to be used in supply chain attacks. On Jun 31st, I went in with the intention of seeing if I could gain access to Homebrew's GitHub repositories.
 ---
 
 > This issue was publicly disclosed on the Homebrew blog at [https://brew.sh/2018/08/05/security-incident-disclosure/](https://brew.sh/2018/08/05/security-incident-disclosure/)
