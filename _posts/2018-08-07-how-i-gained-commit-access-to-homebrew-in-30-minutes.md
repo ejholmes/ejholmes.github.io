@@ -24,7 +24,7 @@ This got me thinking, "where are the credentials stored?". I noticed the "Enviro
 
 I tested it locally to see what scopes the token had:
 
-```
+```bash
 $ curl https://api.github.com/user/repos -u $GITHUB_API_TOKEN:x-oauth-basic | jq '.[] | {repo: .full_name, permissions: .permissions}'
 {
   "repo": "BrewTestBot/homebrew-core",
@@ -68,7 +68,7 @@ Which suggested that I had commit access to these core Homebrew repos:
 
 Just to make sure, I tested this by creating a blob in the Homebrew/homebrew-core repo:
 
-```
+```bash
 $ curl https://api.github.com/repos/Homebrew/homebrew-core/git/blobs \
   -u $GITHUB_API_TOKEN:x-oauth-basic \
   -d '{"content":"test"}' \
