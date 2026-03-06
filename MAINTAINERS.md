@@ -29,5 +29,3 @@ Keep `ejholmes/ejholmes.github.io` healthy, secure, and easy to update.
 - Prefer small, focused PRs (single axis of change).
 - For risky or uncertain changes, open an issue first with context and rollout plan.
 
-## Operational notes
-- Keep maintenance steps repository-focused and avoid references to private/local automation paths.
