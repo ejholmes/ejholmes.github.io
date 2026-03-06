@@ -8,6 +8,7 @@ plugins:
 # Publish policy: exclude local/dev files from static output.
 exclude:
   - AGENTS.md
+  - MAINTAINERS.md
   - README.md
   - Gemfile
   - Gemfile.lock
