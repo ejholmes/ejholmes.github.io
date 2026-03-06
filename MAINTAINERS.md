@@ -30,6 +30,4 @@ Keep `ejholmes/ejholmes.github.io` healthy, secure, and easy to update.
 - For risky or uncertain changes, open an issue first with context and rollout plan.
 
 ## Operational notes
-- General maintenance process is defined in:
-  - `/Users/nova/.openclaw/workspace/runbooks/repo-maintenance.md`
-- Task tracking is handled in Taskwarrior under project `nova:maintenance`.
+- Keep maintenance steps repository-focused and avoid references to private/local automation paths.
